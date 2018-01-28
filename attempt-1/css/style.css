@@ -1,0 +1,25 @@
+html{
+
+}
+body{
+
+}
+.site-nav{
+    box-shadow: 0 0 5px 2px rgba(125, 125, 125, 0.5);
+}
+.site-nav img{
+    height: 6rem;
+}
+.nav-options{
+    float: right;
+}
+.nav-options li{
+    display: inline-block;
+}
+li:hover > .dropdown-menu
+{
+    animation-name: test1;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
