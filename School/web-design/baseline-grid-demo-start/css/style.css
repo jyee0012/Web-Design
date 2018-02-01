@@ -24,17 +24,40 @@ body{
 
 /*Step 6: Style the stuff*/
 h1{
-    font-size: 72px;
-    margin-bottom: 24px;
+    /*divide the target font size by the current (default) font size set by the body*/
+    font-size: 72px; 
+    font-size: 3em; /*48/16*/
+    /*changing the font size now changes the current context. so that now affects the rest of the measurements within this element*/
+    /*divide the target line height by the new current context (font size)*/
     line-height: 96px; /*line height must be larger than the font size, and a multipler of 24px for the grid spacing*/
+    line-height: 1.5em; /*72/48*/
+    margin-bottom: 24px;
+    margin-bottom: 0.5em; /*24/48*/
+    
 }
 p{
     margin-bottom: 24px;
+    margin-bottom: 1.5em; /*24/16*/
     max-width: 480px;
+    max-width: 30em; /*480/16*/
 }
 h2{
-    font-size: 48px;
-    margin-top: 48px; /*double the amount to take into account the collapsing margin from the above paragraph*/
-    margin-bottom: 24px;
+    font-size: 48px; 
+    font-size: 2.25em; /*36/16*/
     line-height: 48px;
+    line-height: 1.3333em; /*48/36*/
+    margin-bottom: 24px; 
+    margin-bottom: 0.667em; /*24/36*/
+    margin-top: 48px; /*double the amount to take into account the collapsing margin from the above paragraph*/
+    margin-top: 1.3333em; /*48/36*/
+}
+@media screen and (min-width: 50em){
+    body{
+        font-size: 100%;
+    }
+}
+@media screen and (min-width:75em){
+    body{
+        font-size: 112.5%;
+    }
 }
