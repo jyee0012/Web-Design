@@ -1,0 +1,21 @@
+1. source a frame you like
+    -html5boiler plate......
+    -- understand how they are built
+
+2. Custom Build
+    -include the elements you want.
+
+3. Reset or Normalize
+    Normalize - more standards based.
+
+
+Best Practices
+1. lowercase everything
+2. two words use dash, use underscore in image names
+3. Semantic
+
+Dev Environment 
+1. VS Code
+2. Add Extension
+3. File View
+4. Live Server.

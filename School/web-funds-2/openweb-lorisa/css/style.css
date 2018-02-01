@@ -1,0 +1,126 @@
+html{
+font-size:16px;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+line-height:1.5;
+}
+/*
+--------------------------------------------------------
+******************** SITE NAVIGATION ******************
+--------------------------------------------------------
+*/
+.site-navigation {
+box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+position:relative;
+}
+.site-navigation img{
+height: 60px;
+padding:10px;
+}
+.site-navigation ul{
+float:right;
+margin-right: 48px;
+}
+
+.site-navigation li{
+display:inline;
+margin-right: 36px;
+line-height: 80px;
+}
+/*
+--------------------------------------------------------
+******************** PAGE MARQUEE ******************
+--------------------------------------------------------
+*/
+.page-marquee{
+background-color:#f3f3f3;
+height:400px;
+text-align:center;
+padding: 48px;
+}
+.page-marquee h1{
+font-size:60px;
+margin-top:20px;
+
+
+}
+
+
+.free-trial-offer{
+box-shadow:0 0 5px 1px rgba(0,0,0,0.25);
+background: linear-gradient(to bottom, #fa4343, #f53d2b);
+padding:10px 10px;
+color:white;
+font-size:24px;
+border-radius:8px;
+margin-bottom: 40px;
+
+}
+.marquee-container
+{
+min-width: 960px;
+max-width: 1200px;
+margin:0 auto;
+}
+
+.host-plans header
+{
+width:200px;
+height:200px;
+background: white;
+float:left;
+margin-right:24px;
+box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+position:relative;
+margin-top: 40px;
+}
+.rmv-margin-right
+{
+margin-right: 0;
+
+}
+.hosting-plan-container
+{
+margin: 0 auto;
+max-width: 960px;
+}
+
+.footer{
+max-height: 600px;
+background: black;
+margin: 0 auto;
+max-width: 960px;
+}
+
+a
+{
+cursor:pointer;
+
+}
+a:link
+{
+text-decoration: none;
+
+}
+a:hover
+{
+text-decoration: underline;
+
+}
+.price
+{
+box-shadow:0 0 5px 1px rgba(0,0,0,0.25);
+background: linear-gradient(to bottom, #fa4343, #f53d2b);
+padding:12px 12px;
+color:white;
+font-size:20px;
+border-radius:8px;
+margin-bottom: 10px;
+
+}
+.details
+{
+font-size:12px;
+}

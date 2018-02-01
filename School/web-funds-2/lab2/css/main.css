@@ -1,0 +1,39 @@
+/*
+
+  Add the appropriate styles for the assessment
+
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../img/clouds.png), url(../img/bush.png), url(../img/sun.png),url(../img/dock.png), url(../img/bkg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35rem, 25rem, 20rem, 35rem, cover;
+  background-position: right top, left bottom ,left top, right bottom,center;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+p {
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-header {
+  margin-top: 20%;
+}

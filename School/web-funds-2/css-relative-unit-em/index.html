@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Starting Framework</title>
+ 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+</head>
+
+<body>
+
+ <header class="site-banner">
+   <div class="logo-container">
+     <img src="img/css3-logo.png" alt="css three logo">
+     <h1>CSS Relative Units Of Measurement</h1>
+   </div>
+ </header>
+
+ <main class="content-container">
+   
+     <article class="intro">      
+     
+           <h2>Relative Units Of Measurement</h2>
+           <p>A relative unit gets sizing from something else. In the specification the relative length units are defined as em and rem. These are font-relative lengths. The specification also defines a % value, which is always relative to another value. Using relative values means that things can scale up and down according to some other value.</p>
+           
+     </article>      
+     
+        <article class="percentage-units">
+        
+          <h2>Percentage Units</h2>
+          <p>A container directly inside the viewport with a width of 90% will always be 90% of the available width - whether you're on a phone or high resolution display.</p> 
+            
+          <p>If I have another container inside that first container with a width of 50%, it takes
+          50% of the width of the parent element and not the viewport.</p>
+        
+        </article>
+         
+       <article class="em-units"> 
+         <h2>The EM</h2>   
+        <p>An em is a relative unit of measurement meaning it gets it's value from somewhere else. The somewhere else is either the
+          current element's font-size or viewport default font size:</p>
+        
+        <p>The default value for an em is base on the font-size set by the browser manufactures for each browser. Luckely this value
+          is basically the same 16 px.</p>
+         <p>So the means that 1em is 16 pixels before you write any styles. But beware — font sizes are inherited by elements from their parents, so if different font sizes have been set on parent elements, the pixel equivalent of an em can start to change. This is called the context. You need to know the context</p>  
+           
+          <p>Don't worry too much about this for now — we'll cover inheritance and font-sizing in more detail in later articles and modules ems are the most common relative unit you'll see in use on the web. There are other relative units of measurement that are now supported by a wide variety of browsers. Such as: 
+           </p>
+           <ul>
+             <li><h2>Relative Units of Meaurement</h2></li>
+               <li>relative em's - rem</li>
+               <li>viewport width  - vw</li> 
+               <li>viewport height - vh</li>
+               <li>fractional units - fr</li>
+           </ul>
+  
+          </article>
+ </main>
+</body>
+</html>

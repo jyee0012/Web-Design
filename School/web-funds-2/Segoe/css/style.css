@@ -1,0 +1,68 @@
+html{
+    font-size: 2rem;
+}
+body{
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: #6c635e;
+}
+/* CSS background img pathing from the CSS ../ unix parent */
+/* ./ - current directory */
+/* ../ - parent directory */
+    /*
+    background repeat for tiled background
+    background-repeat: repeat-x row;
+    background-repeat: repeat-y column;
+    background-repeat: no-repeat;
+    */   
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+}
+.container{
+    height: 18rem;
+    background: rbga(0,0,0,15);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0.25), rgba(0,0,0,0.12))
+    ,url(../img/page-banner-background.jpg)
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.move-left-btn{
+    padding: 5rem 0;
+    float: left;
+} .move-right-btn{
+    padding: 5rem 0;
+    float: right;
+}
+.header-text{
+    padding: 4rem 0;
+}
+.header-text h1{
+    font-size: 2.5rem;
+}
+.header-text p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem; 
+}
+a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+}
+.download{
+    color: #6c635e;
+    background-color: #ebe3de;
+}
+.github{
+    color: #ebe3de;
+    background-color: #6c635e;
+}

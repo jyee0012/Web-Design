@@ -1,0 +1,32 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 125%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    width: 52em;
+    text-align: center;
+    margin: auto;
+    padding: 0 60px;
+}
+nav *{
+    display: inline-block;
+}
+header a{
+    background-color: #ffd200;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #121212;
+}
+h2{
+    color: #ccc;
+}
+ul li{
+    display: inline-block;
+}

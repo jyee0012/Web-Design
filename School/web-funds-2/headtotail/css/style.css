@@ -1,0 +1,160 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #4238a4;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header a, .choose-vet a{
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px 2px rgb(170, 166, 166); 
+}
+
+/* 
+    Site Navigation 
+*/
+
+.site-nav{
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px rgb(170, 166, 166); 
+    line-height: 3rem;
+    z-index: 3;
+}
+.site-nav img, .site-nav p{
+    float: left;
+    font-weight: bold;
+    line-height: 4rem;
+    color: #4238a4;
+}
+.site-nav img{
+    height: 3rem;
+    width: 6rem;
+    padding: 0.2rem;
+}
+.site-nav ul{
+    float: right;
+}
+.site-nav li{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    /*margin-right: 2rem;*/
+}
+.site-nav button{
+    background: none;
+    border: none;
+}
+.site-nav ul img{
+    float: none;
+    height: 0.5625rem;
+    width: 0.75rem;
+    padding: 0;
+}
+.site-nav li:hover{
+    background: #efefef;
+}
+
+/*
+    Header / marquee
+*/
+.marquee{
+    padding: 4rem;
+    height: 20rem;
+    background-image: url(../img/marquee-background.png),linear-gradient(to bottom, #ade3f7, #e9e7e7);
+}
+.marquee h1{
+    padding-top: 3rem;
+}
+.marquee p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.marquee a{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 0.25rem;
+}
+.marquee .red-a{
+    background-image: linear-gradient(to bottom, #ec5948, #ae2121);
+}
+.marquee .blue-a{
+    background-image: linear-gradient(to bottom, #7a5ee0, #3c359f);
+    padding: 1rem 5.5rem;
+}
+/*
+    Choose Vet
+*/
+.choose-vet{
+    width: 60rem;
+    margin: auto;
+}
+.choose-vet img{
+    float: left;
+    padding: 0 5rem;
+}
+.spacing{
+    margin-top: 2rem;
+}
+.choose-vet p{
+    text-align: left;
+    padding: 0.5rem;
+    width: 50rem;
+}
+.choose-vet a{
+    background-image: linear-gradient(to bottom, #7a5ee0, #3c359f);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 1.5rem;
+    float: left;
+}
+
+.drop{
+    position: relative;
+}
+/*resetting the padding and margin on the parent li*/
+.drop ul, .drop li{
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+    list-style: none;
+    background: #efefef;
+}
+.sub-option{
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    border-radius: 0 1rem 1rem 1rem;
+}
+/*how to show the sub menu*/
+.drop:hover ul{
+    display: block;
+    padding: 1rem 0;
+    /*white-space: nowrap;*/
+    width: inherit;
+    top:10;
+    left: 0;
+}
+.sub-option li{
+    padding: 12px 24px;
+    width: 350px;
+    /*border-radius: 1rem;*/
+}
+.sub-option li:hover{
+    background: #ccc;
+}

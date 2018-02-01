@@ -1,0 +1,33 @@
+html{
+  
+}
+
+body{
+   
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+
+/* 1em   ~ 20px */
+
+.container1{
+    background:rgba(225,122,122,0.25);
+    width:600px;
+    margin:0 auto;
+    font-size:40px;
+    padding:20px;
+}
+
+.container2{
+   background:rgba(125,145,25, 0.25);
+    width:600px;
+    margin:0 auto;  
+    font-size:10px;
+    padding:20px;
+}
+
+.b{
+    font-size:0.5rem;
+}
+
+ 

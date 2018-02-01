@@ -1,0 +1,57 @@
+html{
+    font-size:20px;
+}
+
+body{
+    line-height: 1.5;
+   font-family: -apple-system,
+   BlinkMacSystemFont,
+   "Segoe UI",
+   Roboto,
+   Oxygen-Sans,
+   Ubuntu,
+   Cantarell,
+   "Helvetica Neue",
+   sans-serif;
+
+
+
+  
+}
+
+header{
+       background-image: url(../img/slide-5.jpg);
+       background-repeat:no-repeat;
+       background-size: cover;
+       height:600px;
+}
+section{
+    padding:280px 0;
+    text-align: center;
+}
+
+  h2{
+    font-size: 96px;
+}
+
+.welcome {
+    padding-top:100px;
+    padding-bottom:400px;
+    background-image: url(../img/slide-7.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+ 
+}
+  p{
+    width:60%;
+    margin:0 auto;
+}
+
+ 
+.blank-grey{
+    background:rgb(203, 203, 203)
+}
+
+ 

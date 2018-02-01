@@ -1,0 +1,34 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125%;
+    line-height: 1.5;
+    padding: 50px
+}
+nav{
+    height: 60px;
+    background-color: magenta;
+    /*-webkit-p*/
+    position: sticky;
+    top: 0;
+}
+.parent{
+    background: orange;
+    height: 600px;
+    position: relative;
+}
+.child{
+    background: blue;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dark{
+    height: 600px;
+    background: #000;
+}
+.light{
+    background:red;
+    height: 600px;
+}
