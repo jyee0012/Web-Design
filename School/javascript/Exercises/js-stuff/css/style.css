@@ -1,0 +1,10 @@
+html{
+    width: 30rem;
+}
+.java-button{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+.java-button:hover{
+    cursor:pointer;
+}
