@@ -9,6 +9,7 @@ document.querySelectorAll('.thumbnails img').forEach(function(element) {
         image.src = newSrc;
         image.alt = element.alt;
         image.title = element.title;
+        document.querySelector('.title').innerHTML = image.title;
     });
 }, this);
 // find a way to retrieve the submit button and attach an event on it.

@@ -1,0 +1,11 @@
+1. Fixed Layout px 
+ pros: easy
+ cons: view ports, px are different screen sizes 
+
+2. Fluid/Liquid
+
+3. Adaptive
+js tests the environment servers up the best site for the viewport os
+  site are built for specific viewport size build is relative units
+
+4. Flexible/Responsive
