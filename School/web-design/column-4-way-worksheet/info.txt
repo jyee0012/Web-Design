@@ -1,0 +1,33 @@
+Float:
+Internet Explorer - Didn't support til IE 10, where it got partial support, then got full support at IE 11.
+Firefox - Didn't support til Firefox 4,  where it got full support.
+Chrome - Didn't support til Chrome 7,  where it got full support.
+Safari - Didn't support til Safari 5.1, where it got partial support, then got full support at Safari 6
+Opera - Didn't support til Opera 12.1,  where it got full support.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Inline-block:
+Internet Explorer - Had partial support until IE 8 where it fully supports it.
+Firefox - Had partial support until Firefox 3 where it fully supports it.
+Chrome - Has always fully support it. 
+Safari - Has always fully support it. 
+Opera - Has always fully support it. 
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Column-count:
+Internet Explorer - Didn't support til IE 10,  where it got full support.
+Firefox - Has always partially support it.
+Chrome - Had partial support until Chrome 50 where it fully supports it.
+Safari - Had partial support until Safari 10 where it fully supports it.
+Opera - Opera initally didn't support, then it full supported column-count at Opera 11.5 and Opera 12.1, but then had partial support until Opera 37 where it fully supports it.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Flexbox:
+Internet Explorer - Didn't support til IE 10, where it got partial support.
+Firefox - Had partial support until Firefox 28 where it fully supports it.
+Chrome - Had partial support until Chrome 21 where it fully supports it.
+Safari - Had partial support until Safari 6.1 where it fully supports it.
+Opera - Did not support until Opera 12.1 where it fully supports it.

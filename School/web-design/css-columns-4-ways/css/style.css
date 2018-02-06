@@ -1,0 +1,51 @@
+header,
+section,
+footer {
+    width: 1200px;
+    margin: 3em auto;
+}
+/* Floated */
+.row > .column{
+    float:left;
+    width: 380px;
+    margin-right: 30px;
+}
+.row > .column:last-child{
+    margin: 0;
+}
+
+/* Display Inline Block */
+/* Inline block has the same properties as inline elements, but with the width and height allowed */
+/* Inline lements take the spacing from the HTML */
+.inline > .column{
+    display:inline-block;
+    width: 380px;
+    margin-right: 30px;
+    /* The top of the line is now aligned with the top of the tallest element */
+    vertical-align: top;
+}
+.inline > .column:last-child{
+    margin: 0;
+}
+/* Column Count */
+.column-count-container{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+.column-count-container > p{
+    display: inline-block;
+}
+/* Flexbox */
+/* It enables a flex context for all it's direct children. By default, flex items (the children) will all try to fit onto one line */
+.flexbox{
+    display:flex;
+    /* use justificiation of items to layout spacing for gutters between columns */
+    justify-content: space-between;
+}
+.flexbox > .column{
+    width: 30%;
+}
