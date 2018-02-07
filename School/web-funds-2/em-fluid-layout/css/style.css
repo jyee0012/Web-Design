@@ -1,0 +1,20 @@
+html{
+    font-size: 1vw;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+header{
+    font-size:2vw;
+}
+.site-nav{
+    font-family: 'Inconsolata', monospace;
+}
+footer{
+    background-color: #ddd;
+}
+.social-media{
+    display: inline-block;
+}

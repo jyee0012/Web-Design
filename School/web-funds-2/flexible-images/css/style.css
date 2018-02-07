@@ -1,0 +1,54 @@
+
+body{
+ 
+    font-family: "Lato", sans-serif;   
+    line-height: 1.5;
+}
+
+header{
+    font-size:5vw;
+    text-align:center;
+}
+
+
+.item-container{
+   width:100%;
+}
+
+.items{
+   width:65vw;
+   margin:0 auto;
+}
+
+.item{
+    text-align: center;
+    margin-right: 5.7%;
+    width: 47%;
+    background: rgba(125,125,125,0.25);
+    float: left;
+    padding: 1em;
+}
+.item h2{
+    font-size: 2vw;
+    margin-bottom: 1em;
+     
+}
+.item p{
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 1vw;
+}
+.item img{
+    margin-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+}
+/* Utility Class*/
+/* utility class should be placed in a seperate css that is called after the default. */
+.remove-margin-right{
+    margin-right: 0;
+}
+ 
