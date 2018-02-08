@@ -1,0 +1,76 @@
+html{
+	background:lightgrey;
+}
+header,
+section {
+	width: 70rem;
+	margin: 0 auto;
+	background: white;
+}
+header{
+	background:black;
+	color: white;
+}
+header h1{
+	font-size: 3rem;
+}
+header p{
+	padding-left: 3rem;
+	font-size: 1rem;
+}
+figure{
+	box-shadow: 0 0 5px 2px  rgba(150,150,150,0.5);
+	width: 31.2rem;
+	padding: 0.5rem;
+	margin-right: 1.5rem;
+	float: right;
+}
+h1,h2,h3,h4,h5,h6{
+	padding-top: 1rem;
+	padding-left: 1.5rem;
+	font-weight: bold;
+}
+p{
+	width: 32.5rem;
+	margin: 1rem;
+	line-height: 120%;
+	margin-left: 1.5rem;
+	font-size: 1rem;
+}
+ul {
+	margin-left: 5rem;
+	width: 32.5rem;
+	border: 0.02rem solid black;
+	border-radius: 0.5rem;
+	padding:0.5rem 1.5rem;
+}
+.part{
+	/* border: black solid 1px; */
+}
+h2 {
+	font-size: 1.7rem;
+}
+h3{
+	font-size: 1.2rem;
+}
+.five{
+	padding-bottom: 3rem;
+}
+.two{
+	width: 32rem;
+	/* float: right; */
+}
+.one{
+	padding-top: 0.5rem;
+}
+.part p, .part ul{
+	color: rgb(22,22,22);
+}
+li{
+	line-height: 120%;
+	font-style: italic;
+}
+.why{
+	width: 33rem;
+	border-top: black dotted 1px;
+}

@@ -1,0 +1,74 @@
+html{
+  font-size: 100%; /*16px*/
+}
+  body {
+    background-color: #fbfbfb;
+  }
+
+  article {
+    width: 60em; /*960/16*/
+    margin: 0 auto;
+  }
+
+  img {
+    float: left;
+    margin-right: 1em;
+  }
+
+  footer {
+    font-style: italic;
+    color: #777;
+  }
+
+  /*********************** Your code goes here ***********************/
+
+body {
+    font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    background-image: linear-gradient(#0ff 1px, transparent 1px);
+    background-size: auto 24px;
+    color: #333;
+
+    /*Step 5: Choose a typographic scale*/
+    /*12,14,16,18,21,24,36,48,60,72*/
+}
+h1,h2,h3,h4,h5,h6{
+  margin-top: 1.5em; /*24/16*/
+}
+p{
+  margin-bottom: 1.5em; /*24/16*/
+  line-height: 1.5em; /*24/16*/
+  max-width: 30em; /*480/16*/
+}
+h1{
+  font-size: 3.75em; /*60/16*/
+  margin: 0.4em 0; /*24/60*/
+  line-height: 1em; /*60/60*/
+}
+h2{
+  font-size: 3em; /*48/16*/
+}
+h3{
+  font-size: 2.25em; /*36/16*/
+  line-height: 1.3333333333333333333333333em; /*48/36*/
+  margin-top: 0.667em; /*24/36*/
+}
+h4{
+  font-size: 1.5em; /*24/16*/
+  line-height: 1em; /*24/24*/
+  margin-top: 1em; /*24/24*/
+}
+h5{
+  font-size: 1.3125em; /*21/16*/
+  line-height: 1.1429em; /*24/21*/
+  margin-top: 1.1429em; /*24/21*/
+}
+h6{
+  font-size: 1.125em; /*18/16*/
+  line-height: 1.3333em; /*24/18*/
+  margin-top: 1.3333em; /*24/18*/
+} 
+img{
+  width: 40%;
+}
