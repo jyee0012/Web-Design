@@ -1,0 +1,7 @@
+alignment is lining text up so it is easily readable and not confusing to the human eye. 
+Avoid justified alignment, and avoid using center alignment when using a large wall of text.
+margins are used in alignment to ensure that they all start along the same line.
+
+measure is the length of how a line of text may extend to. ensuring that the single line of text isn't too long so the users will get lost. 
+Instead break the lines down to be shorter and easier to manage. 
+size of text may also affect measurement, because that was all I could find when searching things up. 
