@@ -33,7 +33,7 @@ document.querySelector('form').addEventListener('submit', function(evt){
             dataTag = element;
         }
         });
-        for(var i = 0; i < 10; i++)
+        for(var i = 0; i < 100; i++)
         {
             input = input.replace(' ', '-');
         }

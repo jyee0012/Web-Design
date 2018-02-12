@@ -118,6 +118,6 @@ input[type=text] {
 .gallery>nav>ul>li>img:hover {
   cursor: pointer;
 }
-.tag{
-  max-width: 20rem;
+.editor{
+  max-width: 40rem;
 }
