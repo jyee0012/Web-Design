@@ -1,0 +1,26 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-size: 7rem;
+    text-align: center;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.inspiration figure{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 12rem;
+}
+.inspiration figure img{
+    max-width: 60rem;
+    box-shadow: 0 0 5px 3px rgba(125,125,125,0.5);
+}
+.inspiration figcaption{
+    font-size: 3rem;
+}
+div{
+    /*lookup css transition*/
+}
