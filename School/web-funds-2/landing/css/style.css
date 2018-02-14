@@ -1,0 +1,68 @@
+html{
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125%;
+    line-height: 1.5;
+}
+/* Typography */
+p{
+    margin: 0.75rem 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+/* Navigation */
+nav.site-nav{
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    padding: 0.5rem; 
+}
+.fa-html5{
+    font-size: 3rem;
+}
+.site-nav .material-icons{
+    float: right;
+    font-size: 3rem;
+}
+/* Header */
+.page-header{
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background-color: pink;
+    color:white;
+    text-align: center;
+}
+.page-header .icon{
+    font-size: 8vw;
+}
+.page-header h1{
+    font-size: 3rem;
+}
+/* Labs */
+.labs{
+    width: 75rem;
+    margin: 0 auto;
+}
+.lab{
+    display: inline-block;
+    width: 17rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.lab img{
+    width: 50%;
+}
+.lab h3{
+    font-size: 2rem;
+}
+.lab p{
+    text-align: left;
+    width: 15rem;
+}
