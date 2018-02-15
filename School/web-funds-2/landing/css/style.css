@@ -57,6 +57,9 @@ nav.site-nav{
     font-size: 3rem;
 }
 /* Labs */
+.assessment,.lab{
+    border-radius: 1rem;
+}
 .labs{
 
 }
@@ -83,9 +86,9 @@ nav.site-nav{
 .lab p span{
     color: #c00;
 }
-/* Unique Labs */
-.openweb img{
-    width: 110%; 
+.lab:hover, .assessment:hover{
+    cursor: pointer;
+    background: #ddd;
 }
 /* Headings */
 section h2, aside h2{
@@ -96,10 +99,48 @@ section h2, aside h2{
     font-size: 3rem;
 }
 /* Bio */
+.bio{
+    text-align: center;
+}
+.bio figure > img{
+    width: inherit;
+}
+.bio figure{
+    display: inline-block;
+    width: 24rem;
+}
+.bio figcaption{
+    float: right;
+}
 .social-media img{
     height: 2rem;
 }
 .biography{
+    text-align: left;
     display: inline-block;
-    width: 40rem;
+    width: 34rem;
+    vertical-align: top;
+}
+.biography p{
+    padding: 0;
+}
+.italics{
+    font-style: italic;
+}
+/* Assessments */
+.assessment{
+    display: inline-block;
+    width: 20rem;
+    padding: 0.5rem 2rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+.openweb img{
+    width: 100%; 
+}
+/* Footer */
+footer{
+    padding: 5rem;
 }
