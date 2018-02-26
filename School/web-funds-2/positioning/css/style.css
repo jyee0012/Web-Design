@@ -1,0 +1,81 @@
+html{
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 125%;
+    line-height: 1.5;
+}
+/*
+*******************************************************************************
+                                SITE NAVIGATION
+nav height no greater than 60 - 80 px
+building in ems/rems remember context
+*******************************************************************************
+*/
+
+.site-nav{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    padding: 0.5rem;
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: white;
+}
+.site-nav img{
+    float: left;
+    height: 2rem;
+}
+.site-nav ul{
+    float: right;
+}
+.site-nav li{
+    display: inline-block;
+    margin-right: 3rem;
+}
+/*Love Hate*/
+a, a:link, a:visited, a:hover, a:active{
+    color: rgba(0,0,0,0.425);
+    text-decoration: none;
+}
+
+/*
+*******************************************************************************
+                            PAGE BANNER GALLERY MARQUEE
+nav height no greater than 60 - 80 px
+building in ems/rems remember context
+*******************************************************************************
+*/
+.gallery{
+    margin-top: 3rem;
+    height: 75vh;
+    background-image: url(../img/food1.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+.arrow > i{
+    font-size: 10em;
+    position: absolute;
+    top: 35%;
+    line-height: 0.5rem;
+}
+.left-control i{
+    transform: translate(-40%, -50%);
+    left: 1rem;
+}
+.right-control i{
+    transform: translate(40%, 50%);
+    right: 1rem;
+}
+.slide-view{
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+}
+.dot{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px double black;
+}
