@@ -1,5 +1,4 @@
 html{
-
 }
 body{
     font-family: 'Ruda', sans-serif;
@@ -66,14 +65,29 @@ section{
 section h2{
     margin-bottom: 2.5rem;
 }
+
 /* Header */
 .banner{
-    background-image: url(../img/island.jpg);
+    background-image: url(../img/island.jpg), linear-gradient(to bottom right, #79d2d0, #02679f);
     background-repeat: no-repeat;
     background-position: center;
     padding: 8rem;
     margin-top: 6rem;
 }
+header a > h1{
+    color: #5E1F05;
+}
+.about p{
+    display: inline-block;
+    max-width: 23rem;
+    vertical-align: top;
+    margin-top: 1.5rem;
+}
+.about p:last-child{
+    margin-left: 3rem;
+}
+
+/* Nav */
 .content-nav{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -94,27 +108,18 @@ section h2{
     margin-right: 2rem;
     padding: 0.5rem;
 }
-header a > h1{
-    color: #5E1F05;
-}
-header p{
-    display: inline-block;
-    max-width: 30rem;
-    vertical-align: top;
-    margin-top: 1.5rem;
-}
-header p:last-child{
-    float: right;
-}
+
 /* Plot */
 .plot p{
-    width: 35rem;
+    padding-top: 2rem;
+    width: 22rem;
 }
 .part{
-    background-size: 38%;
+    background-size: 52%;
     background-repeat: no-repeat;
     background-position: top right;
-    background-position-y: 3.5rem;
+    background-position-y: 5.5rem;
+    background-position-x: 26rem;
     background-color: lightblue;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -151,6 +156,8 @@ header p:last-child{
     column-count: 3;
     column-gap: 3rem;
     margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #333;
 }
 .big-text{
     font-family: 'Stardos Stencil', cursive;
@@ -176,6 +183,20 @@ header p:last-child{
 }
 .char p{
     display: inline-block;
-    width: 30rem;
+    width: 22rem;
     margin-left: 1rem;
 }
+
+/*Alternate Color*/
+/*
+html{
+    background-color: #333;
+}
+body{
+    color: #fff;
+}
+.container{
+    padding: 2rem;
+    background-color: #444;
+}
+*/
