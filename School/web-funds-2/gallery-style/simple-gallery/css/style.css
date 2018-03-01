@@ -1,0 +1,68 @@
+/*
+    1. Site Navigation
+
+*/
+body{
+    font-size:125%;
+    font-family: "Lato", sans-serif;   
+    line-height: 1.5;
+    /*
+    fixes margin collapse
+    margin:-1px;
+    padding:1px;
+    */
+}
+/*
+******************************************************************
+            SITE NAVIGATION
+1. keep ~  60 to 80px
+******************************************************************
+*/
+nav.site-nav{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    padding: 0.5em;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#fff;
+    z-index:999999;
+    min-width:800px;
+}
+.site-nav img{
+   height: 2em;
+   float:left;
+}
+.site-nav ul{
+   float:right;
+   list-style-type: none;
+}
+.site-nav li{
+    display:inline-block;
+    margin-right:3em;
+}
+/* love hate */
+a, a:link, a:visited, a:hover, a:active{
+    color:rgba(0,0,0,0.25);
+    text-decoration: none;
+} 
+a:hover{
+    color:black;
+    border-bottom:1px solid black;
+}
+/*
+******************************************************************
+                    GALLERY SLIDES
+******************************************************************
+*/
+
+.slide-1 {
+    background-image: url(../img/slide1.jpg);
+}
+
+.slide-2 {
+    background-image: url(../img/slide2.jpg);
+}
+
+.slide-3 {
+    background-image: url(../img/slide3.jpg);
+}

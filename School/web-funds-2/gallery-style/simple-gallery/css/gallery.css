@@ -1,0 +1,71 @@
+/*
+******************************************************************
+            GALLERY CONTROLS
+******************************************************************
+*/
+
+.gallery {
+    margin-top: 3em;
+    height: 55vh;
+    position: relative;
+}
+.slide-1,.slide-2,.slide-3 {
+    width: 100vw;
+    height: 55vh;
+    position: absolute;
+    background-color: #fff;
+    background-position: bottom right;
+    background-size: center;
+    background-repeat: no-repeat;
+}
+ 
+
+ 
+
+ 
+
+.slide-view {
+    position: absolute;
+    background: rgba(235, 235, 235, 0.022);
+    bottom: -1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 0.6em;
+}
+
+.current-slide {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.557);
+    margin-right: 0.6em;
+}
+
+/*
+******************************************************************
+                    GALLERY SLIDES
+******************************************************************
+*/
+
+
+
+.slide-1 {
+    background-image: url(../img/slide1.jpg);
+}
+
+.slide-2 {
+    background-image: url(../img/slide2.jpg);
+}
+
+.slide-3 {
+    background-image: url(../img/slide3.jpg);
+}
