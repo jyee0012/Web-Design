@@ -59,11 +59,11 @@ nav.site-nav{
                                 YOUR SLIDE STYLES WILL GO HERE
 **********************************************************************************************************
 */
-.slide-1, .slide-2,.slide-3,.gallery{
+.slide-1, .slide-2,.slide-3{
+    text-align: center;
+    color:#eee;
 }
 .slide-1 {
-    text-align: center;
-    color:white;
     background-image: radial-gradient(rgba(170,170,170,0.7), rgba(10,10,10,0.95)), url("../img/banner.jpg");
 }
 .slide-1 .icon{
@@ -76,18 +76,24 @@ nav.site-nav{
 }
 
 .slide-2 {
-    text-align: center;
-    color:white;
     background-image: url(../img/coding.png);
 }
 .slide-2 h1{
-    margin-top: 24rem;
+    margin-top: 16rem;
     padding: 2rem 0;
     font-size: 3rem;
 }
 
 .slide-3 {
-    background-image: url(../img/slide3.jpg);
+    text-align: center;
+    background-position-y: 30rem;
+    background-image: url(../img/AI.png);
+}
+.slide-3 h1{
+    color: #000;
+    margin-top: 16rem;
+    padding: 2rem 0;
+    font-size: 3rem;
 }
 
 /* 

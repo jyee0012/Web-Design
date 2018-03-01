@@ -28,7 +28,9 @@
        background-size: cover;
        background-repeat: no-repeat;
 }
-
+.slide-3{
+    background-position-y: 20%;
+}
  
 
 
