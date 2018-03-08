@@ -1,0 +1,117 @@
+/*
+    1. Site Navigation
+
+*/
+body{
+    font-size:125%;
+    font-family: "Lato", sans-serif;   
+    line-height: 1.5;
+    /*
+    fixes margin collapse
+    margin:-1px;
+    padding:1px;
+    */
+}
+/*
+******************************************************************
+            SITE NAVIGATION
+1. keep ~  60 to 80px
+******************************************************************
+*/
+nav.site-nav{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    padding: 0.5em;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#fff;
+    z-index:999999;
+    min-width:800px;
+}
+.site-nav img{
+   height: 2em;
+   float:left;
+}
+.site-nav ul{
+   float:right;
+   list-style-type: none;
+}
+.site-nav li{
+    display:inline-block;
+    margin-right:3em;
+}
+/* love hate */
+a, a:link, a:visited, a:hover, a:active{
+    color:rgba(0,0,0,0.25);
+    text-decoration: none;
+} 
+a:hover{
+    color:black;
+    border-bottom:1px solid black;
+}
+/*
+******************************************************************
+            GALLERY CONTROLS
+******************************************************************
+*/
+
+ .gallery{
+     margin-top: 3em;
+     width: 100%;
+     height: 65vh;
+     position: relative;
+     background-color: lightblue;
+ }
+ .slide-1, .slide-2,.slide-3{
+     width: 100%;
+     height: 65vh;
+     position: absolute;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ .slide-1{
+    background-image: url(../img/slide1.jpg);
+ }
+ .slide-2{
+    background-image: url(../img/slide2.jpg);
+ }
+ .slide-3{
+    background-image: url(../img/slide3.jpg);     
+ }
+ .previous-slide, .next-slide{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    line-height: 0;
+ }
+ .previous-slide i, .next-slide i{
+    font-size: 3rem;
+ }
+ .previous-slide i:hover, .next-slide i:hover{
+    cursor: pointer;
+ }
+ .previous-slide{
+    left: 0;
+ }
+ .next-slide{
+    right: 0;
+ }
+ .slide-view{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .dot, .current-slide{
+     display: inline-block;
+     width: 0.6em;
+     height: 0.6em;
+     /*background-color: rgba(0,0,0,0.15);*/
+     border-radius: 50%;
+     margin-right: 0.6em;
+     border: 2px solid black;
+ }
+ .current-slide{
+     background-color: black;
+ }
