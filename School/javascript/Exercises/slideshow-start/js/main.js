@@ -15,7 +15,6 @@ for(idx = 0; idx < images.length;idx++) {
 // highlight the first bullet as 'active'
 var periodArray = document.querySelectorAll('.image-tracker span');
 periodArray[currentImg].classList.add('active');
-
 // add event listener for carousel controls
 document.querySelector('.carousel').addEventListener('click', function (evt){
     var target = evt.target;
@@ -29,7 +28,7 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
             currentImg -= 1;
         } else {
         	// selector bullet clicked
-            currentImg = target.dataset.idx;
+            currentImg = Number(target.dataset.idx);
         }
         // if index is outside the array.
         if (currentImg >= images.length){
@@ -43,7 +42,23 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
 
         // update the active selector bullet
         periodArray[currentImg].classList.add('active');
-        console.log(currentImg + ':' + target.dataset.idx);
         
     }
 }); 
+// key presses
+document.addEventListener('keydown', function(evt){
+    var click = new MouseEvent('click', {
+        bubbles: true
+    });
+    periodArray[currentImg].classList.remove('active');
+    switch(evt.key) {
+        case 'ArrowRight':
+        document.querySelector('.next').dispatchEvent(click);
+        break;
+        case 'ArrowLeft':
+        document.querySelector('.prev').dispatchEvent(click);
+        break;
+        default:
+        break;
+    }
+})
