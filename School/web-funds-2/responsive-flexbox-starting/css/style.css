@@ -1,0 +1,108 @@
+
+body{
+    font-size:100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    position:relative;
+}
+
+
+/* 
+************************************************************************
+                            TYPOGRAPHY
+************************************************************************
+*/
+ 
+
+/* 
+************************************************************************
+                           CONTROL STRIP
+************************************************************************
+*/
+.control-strip{
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+}
+.icon-view{
+    display: flex;
+    justify-content: space-between;
+}
+.list-view{
+    display: none;
+}
+ 
+ 
+
+/* 
+************************************************************************
+                           PAGE HEADER
+************************************************************************
+*/
+.page-header{
+    background: linear-gradient(to top, rgb(226, 225, 225), rgb(205, 205, 205));
+    height:22em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    margin-bottom:1.5em;
+}
+.brand{
+   height: 8em;
+   margin-bottom:0.5em;
+}
+.page-header h1{
+    font-size:1.9em;
+    margin-bottom:0.5em;
+}
+a.coffee-club-sign-up{
+    display:inline-block;
+    font-size:1.5em;
+     color:inherit;
+     opacity: 0.45;
+     text-decoration: inherit;
+     background: linear-gradient(to top, rgb(182, 181, 181), rgb(205, 205, 205));
+     padding:0.4em 0.755em;
+     border-radius:0.625em;
+     border:1px solid rgb(157, 153, 153);
+     box-shadow: 0 0  8px 1px rgba(0,0,0,0.25);
+}
+.coffee-club-sign-up img{
+   height:1.5em;
+   margin-top:-0.325em
+}
+/* 
+************************************************************************
+                        CONTENT BOX STYLES
+************************************************************************
+*/
+.site-features{
+   padding:0.5em;
+}
+
+.item{
+     height:22em;
+     background:rgb(244, 244, 247);
+    border:1px solid rgb(160, 160, 160);
+    box-shadow: 0 0 8px 1px  rgba(160, 160, 160, 0.35);
+    margin-bottom:1.5em;
+}
+/* 
+************************************************************************
+                           MEDIA QUERIES
+************************************************************************
+*/
+@media (min-width:724px){
+     .icon-view{
+         display: none;
+     }
+     .list-view{
+         display: flex;
+         justify-content: space-evenly;
+     }
+}
+@media (min-width:1200px){
+     .list-view{
+         justify-content: flex-end;
+     }
+}

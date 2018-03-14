@@ -75,6 +75,22 @@ a{
 .page-header a:last-of-type{
     background-image: linear-gradient(to bottom, #7a5ee0, #3c359f);
 }
+.previous-slide, .next-slide{
+    width: 7%;
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -50%);
+    line-height: 0;
+}
+.previous-slide:hover, .next-slide:hover{
+    cursor: pointer;
+}
+.previous-slide{
+    left: 0;
+}
+.next-slide{
+    right: 0;
+}
 /*
 ******************************************************************
             SITE FEATURES

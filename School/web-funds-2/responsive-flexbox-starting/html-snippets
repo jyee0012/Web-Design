@@ -1,0 +1,42 @@
+/*
+            NAVIGATION MARKUP
+*/  
+  
+   <nav class="control-strip">
+     <ul class="icon-view">
+       <li class="menu-button"><i class="material-icons">menu</i></li>
+       <li class="logo">coffee house culture</li>
+       <li class="settings"><i class="material-icons">settings</i></li>
+     </ul>
+     
+      <ul class="list-view">
+        <li>green beans</li>
+        <li>roasting equipment</li>
+        <li>brewing</li>
+        <li>coffee club</li>
+      </ul>
+    </nav>
+
+
+/*
+    HEADER MARKUP
+*/  
+ <header class="page-header">
+     
+         <img class="brand company-logo" src="img/coffee-beans.svg" alt=""> 
+   
+      <h1>Coffee House Culture</h1>
+      <a href="#" class="coffee-club-sign-up"> <img src="img/hot-coffee.svg" alt="">   sign up for coffee club</a>
+</header>
+
+
+/*
+    CONTENT BOX MARKUP
+*/  
+  <main>
+          <div class="site-features">
+               <aside class="item"></aside>
+               <aside class="item"></aside>
+               <aside class="item"></aside>
+          </div>
+    </main>

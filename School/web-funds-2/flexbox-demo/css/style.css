@@ -1,0 +1,72 @@
+  /* 
+     Replace these styles with you body element styles
+     Default font size 18px
+     font family system UI
+     line-height 1.5; ~baseline grid 27px
+  */
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+    
+}
+
+ /*
+******************************************************************
+                   CONTAINER STYLES
+******************************************************************
+*/
+
+p{
+    margin-bottom:1.5em;
+}
+ 
+ /*
+******************************************************************
+                   CONTAINER STYLES
+******************************************************************
+*/
+ .container{
+     padding:0.325em;   
+ }
+ .item{
+     background-color:rgba(0,0,0,0.05);
+     margin-bottom:1.5em;
+     border:1px solid rgba(0,0,0,0.215);
+     box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.25);
+     padding:1em;
+ 
+ }
+
+ /*
+******************************************************************
+                  Media Queries
+******************************************************************
+*/
+
+ 
+@media (min-width: 724px) { 
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        flex-basis: 50%;
+        margin-right: 24px;
+        background: rgba(0,0,0,0.2);
+        flex: 0 1 50%;
+        /*1. flex grow */
+        /*2. flex shrink*/
+        /*3. flex basis*/
+    }
+    .item:nth-child(2n){
+        margin-right: 0;
+    }
+}
+@media (min-width: 1200px) { 
+     
+ }
+ 
+ 
