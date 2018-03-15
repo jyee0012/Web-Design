@@ -1,0 +1,167 @@
+
+body {
+    font-size: 125%;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    color: black;
+    /*
+    fixes margin collapse
+    margin:-1px;
+    padding:1px;
+    */
+}
+aside, section{
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 30rem;
+}
+/*
+******************************************************************
+            TYPOGRAPHY
+******************************************************************
+*/
+p{
+    margin: 0.75rem 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*
+******************************************************************
+            SITE NAVIGATION
+******************************************************************
+*/
+nav.site-nav{
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    padding: 0.5rem; 
+}
+.fa-html5{
+    font-size: 3rem;
+}
+.site-nav .material-icons{
+    float: right;
+    font-size: 3rem;
+}
+.list-view{
+    float: right;
+    margin-top: 0.5rem; 
+    display: none;
+    color: #aaa;
+    list-style: none;
+}
+.list-view li:hover{
+    color: #333;
+    cursor: pointer;
+}
+/* 
+**********************************************************************************************************
+                                YOUR SLIDE STYLES WILL GO HERE
+**********************************************************************************************************
+*/
+
+.slide-1 {
+    text-align: center;
+    color:#eee;
+    background-image: radial-gradient(rgba(170,170,170,0.7), rgba(10,10,10,0.95)), url("../img/banner.jpg");
+    background-position: center;
+}
+.slide-1 .icon{
+    margin-top: 4rem;
+    padding: 2rem 0;
+    font-size: 6rem;
+}
+.slide-1 h1{
+    font-size: 3rem;
+}
+/* 
+**********************************************************************************************************
+                                LABS/ASSESSMENTS/PROJECTS
+**********************************************************************************************************
+*/
+.lab, .assessment, .project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: inherit;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+.lab img, .project img{
+    height: 7rem;
+}
+.assessment img{
+    height: 4rem;
+}
+/* 
+**********************************************************************************************************
+                                HEADINGS
+**********************************************************************************************************
+*/
+section h2, aside h2{
+    margin-top: 5rem;
+    font-family: 'BioRhyme Expanded', serif;
+    text-align: center;
+    color: #666;
+    font-size: 1.7rem;
+}
+/* 
+**********************************************************************************************************
+                                BIO
+**********************************************************************************************************
+*/
+
+.bio figure{
+    width: 20rem;
+    margin: 0 auto;
+}
+.bio figure > img{
+    width: inherit;
+}
+.social-media img{
+    height: 2rem;
+}
+.bio figcaption{
+    float: right;
+}
+/* 
+**********************************************************************************************************
+                                FOOTER
+**********************************************************************************************************
+*/
+
+/* 
+**********************************************************************************************************
+                                MEDIA QUERIES
+**********************************************************************************************************
+*/
+
+@media (min-width:768px){
+    .menu{
+        display: none;
+    }
+    .list-view{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .list-view li{
+        margin-right: 2rem;
+    }
+    .labs, .assessments,.personal{
+        flex: 0 1 45%
+    }
+}
+
+@media (min-width:1024px){
+
+}
