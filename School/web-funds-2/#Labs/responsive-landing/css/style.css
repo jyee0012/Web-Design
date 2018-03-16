@@ -11,9 +11,11 @@ body {
     */
 }
 aside, section{
-    margin: 0 auto;
+    /* margin: 0 auto;
     width: 100vw;
-    max-width: 30rem;
+     */
+    display: flex;
+    justify-content: space-around;
 }
 /*
 ******************************************************************
@@ -87,10 +89,10 @@ nav.site-nav{
                                 LABS/ASSESSMENTS/PROJECTS
 **********************************************************************************************************
 */
+.labs, .assessments, .personal{
+    max-width: 30rem;
+}
 .lab, .assessment, .project{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: inherit;
     margin-right: 1.5rem;
     margin-top: 2rem;
@@ -157,7 +159,7 @@ section h2, aside h2{
     .list-view li{
         margin-right: 2rem;
     }
-    .labs, .assessments,.personal{
+    .lab, .assessment,.project{
         flex: 0 1 45%
     }
 }
