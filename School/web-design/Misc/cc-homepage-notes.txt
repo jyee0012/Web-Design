@@ -1,0 +1,9 @@
+1. The nav is confusing and too clustered along with log in and sign up which I believe do not belong, so I spaced out the nav and moved the login and sign up elsewhere.
+
+2. The active nav color is too close to the neutral color, so I changed it to orange where it stands out more.
+
+3. The site doesn't really explain what it is at first glance, so I moved the welcome text further up above the image to greet new users with the short description of what the site is for.
+
+4. The labels inside the text boxes may be unreliable, so I recreated the labels to be sligtly above the text boxes and spaced out the text boxes some more.
+
+5. Social media shouldn't be the first thing the users see but the site's name or logo, so I moved the social media to the footer and placed the title/logo at the top left.
