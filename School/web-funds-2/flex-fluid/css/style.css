@@ -40,8 +40,8 @@ body{
         width: 80%;
     }
     .item:nth-child(n){
-        width: 384px;
-        margin-right: 24px;
+        width: 32%;
+        margin-right: 2%;
     }
     .item:nth-child(3n){
         margin-right: 0;
