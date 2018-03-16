@@ -61,11 +61,10 @@ nav.site-nav{
 .gallery{
     margin-top: 4rem;
 }
-/*
-******************************************************************
-                        OTHER
-******************************************************************
-*/
+.slide-1 {
+    background-image: radial-gradient(rgba(170,170,170,0.7), rgba(10,10,10,0.95)), url("../img/banner.jpg");
+    background-position: center;
+}
 /*
 ******************************************************************
                         CONTAINER STYLES
@@ -73,6 +72,11 @@ nav.site-nav{
 */
 .container{
     padding: 0.625em;
+}
+.container h2{
+    font-size: 3rem;
+    color: #666;
+    font-weight: bold;
 }
 .item{
     width: 100%;
@@ -87,6 +91,28 @@ nav.site-nav{
 .item:hover{
     cursor: pointer;
     background: #ddd;
+}
+/*
+******************************************************************
+                        BIO
+******************************************************************
+*/
+.bio{
+    margin-top: 3rem;
+}
+.bio figure{
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.bio figure > img{
+    width: inherit;
+}
+.social-media img{
+    height: 2rem;
+}
+.bio figcaption{
+    float: right;
 }
 /*
 ******************************************************************
