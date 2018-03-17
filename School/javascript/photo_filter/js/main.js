@@ -8,16 +8,10 @@ document.querySelector('.frm-control').addEventListener('input', function (evt) 
     }
     document.querySelectorAll('.thumb-display').forEach(function(element) {
         var tags = element.querySelector('.tags').innerHTML;
-        for(var i = 0; i < 4; i++){
-            tags = tags.replace('#','');
-        }
-        var allTags = tags.split(' ');
         var hasTags = 0;
-        allTags.forEach(function(tag) {
-            if(tag.match(evt.target.value) != null) {
+        if(tags.match(evt.target.value) != null) {
                 hasTags++;
-            }
-        }, this);
+        }
         if (hasTags == 0){
             element.classList.add('hidden');
         } else{
