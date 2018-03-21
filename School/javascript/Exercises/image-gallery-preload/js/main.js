@@ -56,4 +56,24 @@ function controlsHandler(evt) {
 		img = new Image();
 		img.src = images[idx];
 	}
-}())
+}());
+// TODO: create a fadeOut function. Incrementally decreases the opacity until it reaches 0; once opacity is 0, switch to the new image and fadeIn()
+var opacityMod = 0.05, fadeTimer = 30;
+function fadeOut() {
+	if (opacity > 0) {
+	opacity -= opacityMod;
+	targetImage.style.opacity = opacity;
+	} else {
+		opacity = 0;
+		clearInterval(intervalId);
+	}
+}
+function fadeIn() {
+	if (opacity < 1) {
+	opacity += opacityMod;
+	targetImage.style.opacity = opacity;
+	} else {
+		opacity = 1;
+		clearInterval(intervalId);
+	}
+}
