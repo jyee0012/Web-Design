@@ -1,0 +1,90 @@
+/*
+******************************************************************
+            GALLERY CONTROLS
+******************************************************************
+*/
+
+.gallery,
+.slide-1,
+.slide-2,
+.slide-3 {
+    width: 99vw;
+    height: 60vh;
+}
+
+.gallery {
+    margin-top: 3em;
+    position: relative;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    position: absolute;
+       background-position: center right;
+       background-size: cover;
+       background-repeat: no-repeat;
+}
+.slide-3{
+    background-position-y: 20%;
+}
+ 
+
+
+
+.slide-view {
+    position: absolute;
+    background: rgba(235, 235, 235, 0.022);
+    bottom: -3em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.dot, .current-slide {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 0.6em;
+}
+
+.current-slide {
+    background: rgba(0, 0, 0, 0.557);
+}
+
+
+.timer {
+    position: absolute;
+    padding: 0.3em;
+    right: 0;
+    user-select: none;
+    text-align: center;
+    width: 8em;
+    font-size: 0.75em;
+    line-height: 1em;
+}
+
+.timer-on {
+    background-color: rgba(75, 210, 75, 0.954);
+    color: rgba(34, 32, 34, 0.92);
+}
+
+.timer-off {
+    background-color: rgba(242, 80, 6, 0.961);
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.timer span {
+    padding-left: 0.5em;
+    font-size: 0.75em;
+}
+
+.timer i {
+    vertical-align: middle
+}
+
