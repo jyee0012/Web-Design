@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sweb2 Landing Responsive</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Lato:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+   
+</head>
+
+<body>
+    <div id="top"></div>
+        <nav class="mobile-menu" role="mobile-controls">
+            <!-- your site navigation-settings items -->
+            <ul class="site-links">
+                <!-- 
+                    Anchor Element This triggers the link/action 
+                    role - is for js do not alter.
+                    data-url="where do you want to go"
+                -->
+                <li class="site-link" role="url-request" data-url="#bio">Bio</li>
+                <li class="site-link" role="url-request" data-url="#lab">Labs</li>
+                <li class="site-link" role="url-request" data-url="https://github.com/jyee0012">Github</li>
+            </ul>
+        </nav>
+        <nav class="site-nav clearfix">
+            <a href="#top"><i class="fab fa-html5"></i></a>
+                <i class="material-icons menu" role="open-menu-button">menu</i>
+                <ul class="list-view">
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#lab">Lab</a></li>
+                    <li><a href="https://github.com/jyee0012">Github</a></li>
+                </ul>
+            </nav>
+     
+               <header class="gallery">
+                   <picture>
+                       <source srcset="img/picture-element/small-3x.jpg 3x,
+                       img/picture-element/small-2x.jpg 2x,
+                       img/picture-element/small-1x.jpg 1x"
+                       media="(max-width: 960px)">
+                       
+                       <source srcset="img/picture-element/medium-3x.jpg 3x,
+                       img/picture-element/medium-2x.jpg 2x,
+                       img/picture-element/medium-1x.jpg 1x"
+                       media="(max-width: 1200px)">
+
+                       <source srcset="img/picture-element/large-3x.jpg 3x,
+                       img/picture-element/large-2x.jpg 2x,
+                       img/picture-element/large-1x.jpg 1x"
+                       media="(min-width: 1200px)">
+                       <img src="img/picture-element/small-1x.jpg" alt="">
+                </picture>
+                 <div class="slide-1" role="slide">
+                <!-- <i class="material-icons icon">polymer</i>
+                <h1>James' Sweb2</h1> -->
+                 </div>
+               </header>
+    <div class="container clearfix">
+            <h2 id="bio" >Bio</h2>
+            <div class="bio">
+                    <figure>
+                    <img src="img/real-face.png" alt="My Face">
+                    <figcaption class="social-media"> 
+                        <a href="https://github.com/jyee0012"><img src="img/github.svg" alt="Github"></a>
+                        <a href="https://discordapp.com/"><img src="img/discord.svg" alt="Discord"></a>
+                        <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <a href="https://twitter.com/?lang=en"><img src="img/twitter.svg" alt="Twitter"></a>
+                    </figcaption>
+                    </figure>
+                    <div class="biography">
+                    <p>James Yee is a starting up game programmer that was born and raised in Edmonton Alberta.</p> 
+                    <p>
+                        He aims to deal with bigger games in the future, but at the moment he is working on a couple personal and small games here and there. He also has some programming experience in many coding languages and styles such as; Web development, Game programming, Javascript, Photo and Image editing, Database, and some Video editing.
+                    </p>
+                    <p>
+                        Check out the work he may have completed and or shown on his github. Contact me on discord, facebook or twitter <span class="italics">(Uses only discord out of the three)</span>.
+                    </p>
+                    </div>
+            </div>
+            <h2 id="lab">Labs</h2>
+        <div class="item">
+                <a href="http://sweb2.dmit.nait.ca/jyee12/dmit1530/headtotail/">
+                    <figure class="lab headtotail">
+                        <img src="img/headtotail.svg" alt="Head to Tail">
+                        <figcaption>
+                            <h3>Head to Tail</h3>
+                            <p>Built website to learn how to implement <span>drop down menus</span>.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+        </div>
+        <div class="item">
+                <a href="http://sweb2.dmit.nait.ca/jyee12/dmit1530/lab2/">
+                    <figure class="lab lab-two">
+                        <img src="img/explore.svg" alt="Lab2">
+                        <figcaption>
+                            <h3>Lab Two</h3>
+                            <p>Website with <span>stacked background images</span> with css modifications to fit nicely.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+        </div>
+        <div class="item">
+                <a href="http://sweb2.dmit.nait.ca/jyee12/dmit1530/photobook/">
+                    <figure class="lab photobook">
+                        <img src="img/camera.svg" alt="Photobook">
+                        <figcaption>
+                            <h3>Photobook</h3>
+                            <p>Structured website <span>based off design document</span> and psd file to the best of ability.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+        </div>
+        <div class="item">
+                <a href="http://sweb2.dmit.nait.ca/jyee12/dmit1530/liquid/">
+                    <figure class="lab liquid">
+                        <img src="img/opacity.svg" alt="Liquid">
+                        <figcaption>
+                            <h3>Liquid Layout</h3>
+                            <p>Made a website that is fluid format. Will <span>resize most elements</span> to fit the view port width.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+        </div>
+        <div class="item">
+            <a href="http://sweb2.dmit.nait.ca/jyee12/dmit1530/smashing/">
+               <figure class="lab smashing">
+                   <img src="img/smashing.svg" alt="Smashing">
+                   <figcaption>
+                       <h3>Smashing Apps</h3>
+                       <p>An exercise to utilize the knowledge and abilities attained from the course up to this point.</p>
+                   </figcaption>
+               </figure>
+               </a>
+        </div>
+        <div id="end"></div>
+    </div>
+    <script src="js/vendor/mobile-menu.js"></script>
+</body>
+</html>
