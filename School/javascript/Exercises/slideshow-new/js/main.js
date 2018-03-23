@@ -56,11 +56,11 @@ document.addEventListener('keydown', function(evt) {
 });
 
 function updateSlide(index) { 
-// display the new current image
-document.querySelector('.carousel>img').src = 'images/' + images[index];
-// update the active selector bullet
-document.querySelector('.image-tracker .active').classList.remove('active');
-document.querySelectorAll('[data-idx]')[index].classList.add('active');
+    // display the new current image
+    document.querySelector('.carousel>img').src = 'images/' + images[index];
+    // update the active selector bullet
+    document.querySelector('.image-tracker .active').classList.remove('active');
+    document.querySelectorAll('[data-idx]')[index].classList.add('active');
 }
 
 // add a variable to track the context of the interval
