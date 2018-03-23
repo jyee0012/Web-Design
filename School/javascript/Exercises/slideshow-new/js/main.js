@@ -32,12 +32,7 @@ document.querySelector('.carousel').addEventListener('click', function(evt) {
             currentImg = Number(target.dataset.idx);
         }
 
-        // display the new current image
-        document.querySelector('.carousel>img').src = 'images/' + images[currentImg];
-
-        // update the active selector bullet
-        document.querySelector('.image-tracker .active').classList.remove('active');
-        document.querySelectorAll('[data-idx]')[currentImg].classList.add('active');
+        updateSlide(currentImg);
     }
 });
 
@@ -67,3 +62,25 @@ document.querySelector('.carousel>img').src = 'images/' + images[index];
 document.querySelector('.image-tracker .active').classList.remove('active');
 document.querySelectorAll('[data-idx]')[index].classList.add('active');
 }
+
+// add a variable to track the context of the interval
+var slideshowInterval;
+
+// now call the setInterval function to begin the slideshow
+function activateTimeSlider() {
+    slideshowInterval = setInterval(function () {
+        currentImg += 1;
+        if (currentImg == images.length) {
+            currentImg = 0;
+        }
+        updateSlide(currentImg)
+    }, 3000);
+}
+activateTimeSlider();
+// Add eventListener so that when mouse hover over image, the timer
+document.querySelector('.carousel img').addEventListener('mouseenter', function () {
+    clearInterval(slideshowInterval);
+});
+document.querySelector('.carousel img').addEventListener('mouseleave', function () {
+    activateTimeSlider();
+});
