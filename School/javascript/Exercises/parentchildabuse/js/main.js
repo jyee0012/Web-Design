@@ -21,7 +21,7 @@ p5.appendChild(text);
 // insert p5 as secondchild to div 1
 div1.insertBefore(p5,p4);
 
-/*
+/* LOL - TSUKI GA MICHIBIKU ISEKAI DOUCHUU
 so something bothers me for the latest chapter of Tsuki ga Michibiku Isekai Douchuu
 so the latest chapter introduces some characters from the Limia faction
 in comparison from web novel to manga:
