@@ -1,0 +1,45 @@
+ /* 
+ **************************************************
+ 					  CONTENT STLES
+ **************************************************
+ */
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+ 
+ 
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+ 
+.masthead {
+    background-color:  #b676ff;
+}
+
+.featured-item{
+    background-color: #ff7676;
+}
+
+.main-content {
+    background-color:  #ffd476;
+}
+
+.sidebar {
+    background-color:  #76ffa8;
+}
+
+.footer-content {
+    background-color: #8476ff;;
+}

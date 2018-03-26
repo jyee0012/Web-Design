@@ -1,0 +1,112 @@
+ 
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+      height: 100%;
+
+    
+}
+ /*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+ 
+.material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:#acacac;
+}
+ 
+ /*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+.control-strip{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
+    padding:0.5em;
+    min-width:320px;
+    z-index: 99999;
+    user-select: none;
+}
+.icon-view{
+    display:flex;
+    justify-content: space-between;
+}
+
+.list-view{
+    display:none;
+}
+
+ 
+
+
+ 
+ /*
+******************************************************************
+                       CSS GRID LAYOUT BASICS
+******************************************************************
+
+1. Define A Grid
+2. gird-template-columns
+     any unit mix an match makes your grid columns
+     shorthand notation repeat(4, 1fr)
+     repeat(auto-fill, 100px)
+*/
+div.page-content{
+  margin: 2.5em .25em 0 0.25em;
+}
+
+.masthead,
+.featured-item,
+.main-content,
+.sidebar,
+.footer-content {
+    padding: 1em;
+    color: white;
+    /*height: 20vh;;*/
+}
+
+ .grid{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(3,auto);
+ }
+
+ .masthead{
+     grid-column: 1/2;
+     grid-row: 1/4;
+ }
+
+ @media (min-width:600px){
+     .masthead{
+         grid-column: 1/2;
+         grid-row: 3/4;   
+         grid-column-gap: 1em;
+         grid-row-gap: 1em;
+     }
+ }
+ /*.feature-item{
+     grid-columns:1/2;
+     grid-row: 1/4;
+ }
+ .main-content{
+     grid-column: 2/3;
+     grid-row: 1/2;
+     z-index: 4;
+ }
+ .sidebar{
+     grid-column:3/4;
+     grid-column: 1/2;
+ }
+ .masthead{
+     grid-column: 2/3;
+     grid-row: 3/4;
+ }*/

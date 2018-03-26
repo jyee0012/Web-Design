@@ -11,3 +11,18 @@ body{
                         DIVIDER
 ******************************************************************
 */
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row:auto auto;
+    grid-column-gap: 0.625em;
+    grid-row-gap:0.625em;
+}
+@media (min-width:728px){
+    .feature{
+        display:flex;
+        justify-content: space-evenly;
+        flex: 0 1 48%;
+    }
+}
