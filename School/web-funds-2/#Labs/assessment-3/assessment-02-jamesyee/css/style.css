@@ -94,6 +94,46 @@ nav.site-nav{
 }
 /*
 ******************************************************************
+                        FOOTER
+******************************************************************
+*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.site-map{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.awards{
+    background-color: #333;
+    color: white;
+    font-size: 175%;
+    padding: 5rem;
+    text-align: center;
+}
+.social-media{
+    background-color: #00c8c8;
+    padding: 5rem 7rem;
+}
+.social-media img{
+    height: 3rem;
+}
+.tm{
+    width: 90%;
+    background-color: #333;
+    color: #858585;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+/*
+******************************************************************
                         MOBILE MENU
 ******************************************************************
 */

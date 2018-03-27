@@ -1,0 +1,17 @@
+Personas & User Stories:
+Personas (2)		/3 - Done
+User Stories(6)		/3 - Working 4/6
+Scope of Features(list)	/1 - Working
+
+Information Architecture:
+Content Organization	/3 - Done
+Sitemap Flowchart	/3 - Done
+Navigation		/1 - Done
+
+Digital Wireframing:
+Responsive Design	/10- 
+Low-fidelity Focus	/3 - 
+Navigation		/5 - 
+
+Total: 			/32
+
