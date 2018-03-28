@@ -70,10 +70,26 @@ nav.site-nav{
                         ITEMS
 ******************************************************************
 */
+.sort{
+    display: flex;
+    justify-content: space-around;
+    height: 1.5rem;
+}
+.sort li{
+    margin-right: 2rem;
+}
+.sort li:hover{
+    color: #59d4d4;
+    cursor: pointer;
+}
+.active{
+    color: #59d4d4;
+}
 .item{
     position: relative;
     box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
     width: 20rem;
+    margin-bottom: 2rem;
 }
 .item img{
     width: inherit;
@@ -82,6 +98,11 @@ nav.site-nav{
     position: absolute;
     top: 1rem;
     left: 1rem;
+    font-weight: normal;
+}
+.item h2 span{
+    font-weight: bold;
+    font-size: 200%;
 }
 .item .info{
     position: absolute;
