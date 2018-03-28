@@ -21,12 +21,15 @@ document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
 		dn,
 		upSpan,
 		up,
+		rt,
+		rtSpan,
 		todoText;
 
 	todoText = evt.target.elements['todo-item'].value;
 
 	dn = '\u21e9'; // Unicode value of down arrow
 	up = '\u21e7'; // Unicode value of up arrow
+	rt = '\u21e8';
 
 	// adding a todo regardless, so might as well increment now...
 	todoCount += 1;
@@ -42,6 +45,7 @@ document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
 	labelText = document.createTextNode(todoText);
 	dnSpan = document.createElement('span');
 	upSpan = document.createElement('span');
+	rtSpan = document.createElement('span');
 
 	// set appropriate attributes
 	checkbox.setAttribute('type', 'checkbox');
@@ -50,13 +54,16 @@ document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
 	label.setAttribute('contenteditable', '');
 	dnSpan.setAttribute('class', 'arrow dn');
 	upSpan.setAttribute('class', 'arrow up');
+	rtSpan.setAttribute('class', 'arrow rt');
 	dnSpan.textContent = dn;
 	upSpan.textContent = up;
+	rtSpan.textContent = rt;
 
 	// build document fragment
 	label.appendChild(labelText);
 	div.appendChild(checkbox);
 	div.appendChild(label);
+	div.appendChild(rtSpan);
 	div.appendChild(dnSpan);
 	div.appendChild(upSpan);
 
@@ -78,11 +85,15 @@ document.querySelector('.todo-list').addEventListener('click', function (evt) {
 			siblingTodo = targetTodo.nextElementSibling;
 			// insert the sibling before the target
 			todos.insertBefore(siblingTodo, targetTodo);
-		} 
-		else if (evt.target.classList.contains('up')) {
+		} else if (evt.target.classList.contains('up')) {
 			siblingTodo = targetTodo.previousElementSibling;
 			// insert the sibling before the target
 			todos.insertBefore(targetTodo, siblingTodo);
+		} else if (evt.target.classList.contains('rt')) {
+			if(confirm('Are you sure you wish to remove this list item?'))
+			{
+				targetTodo.remove();
+			}
 		}
 	}
 });
