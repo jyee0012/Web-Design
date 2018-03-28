@@ -1,0 +1,109 @@
+ 
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+      height: 100%;
+
+    
+}
+ /*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+ 
+.material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:#c4c4c4;
+}
+ 
+ /*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+.control-strip{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
+    padding:0.5em;
+    min-width:320px;
+    z-index: 99999;
+    user-select: none;
+}
+.icon-view{
+    display:flex;
+    justify-content: space-between;
+}
+
+.list-view{
+    display:none;
+}
+
+ 
+
+
+ 
+ /*
+******************************************************************
+                       CSS GRID LAYOUT BASICS
+******************************************************************
+*/
+main{
+    margin-top:2.5em;
+    padding:0 2.5em;
+}
+
+.grid-cell img{
+    width:100%;
+}
+
+.feature-layout{
+    margin-top: 3rem;
+}
+.feature{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    grid-column-gap:0.625em;
+    grid-row-gap:0.625em;
+}
+.sorted{
+    display:block;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.sorted li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.active{
+    color: #59d4d4;
+}
+li:hover{
+    color: #59d4d4;
+    cursor: pointer;
+}
+.x2{
+    grid-column: span 2;
+}
+
+@media (min-width: 700px){
+ 
+ .feature-layout{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .feature{
+       flex:0 1 48%;
+    }
+    .sorted{
+    display:block;
+    }
+}
+ 

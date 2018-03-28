@@ -1,117 +1,99 @@
-html{
-    font-size: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 1.5;
+ 
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+      height: 100%;
+
+    
 }
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-/*
+ /*
 ******************************************************************
-                        TYPOGRAPHY
+                    TYPOGRAPHY
 ******************************************************************
 */
+ 
+.material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:#c4c4c4;
+}
 a{
-    text-decoration: none;
-    color: black;
+        color: black;
+        text-decoration: none;
 }
-/*
+ /*
 ******************************************************************
-                        SITE NAVIGATION
+                           CONTROLS
 ******************************************************************
 */
-nav.site-nav{
-    background-color: white;
-    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+.control-strip{
     position: fixed;
-    top: 0; 
-    width: 100%;
-    padding: 0.5rem;
-    z-index: 9999999;
-    display: flex;
-    flex-wrap: wrap;
-}
-.site-nav h1{
-    font-size: 150%;
-    padding-left: 1rem;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
+    padding:0.5em;
+    min-width:320px;
+    z-index: 99999;
+    user-select: none;
 }
 .icon-view{
-    float: right;
+    display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
+
 .list-view{
-    margin-top: 0.5rem; 
-    display: none;
-    color: black;
-    list-style: none;
-    justify-content: flex-end;
+    display:none;
+} 
+ /*
+******************************************************************
+                       CSS GRID LAYOUT BASICS
+******************************************************************
+*/
+main{
+    margin-top:2.5em;
+    padding:0 2.5em;
 }
-.list-view li:hover{
-    color: #59d4d4;
-    cursor: pointer;
+
+.grid-cell img{
+    width:100%;
 }
-.list-view a{
-    color: inherit;
+
+.feature-layout{
+}
+.feature{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    grid-column-gap:0.625em;
+    grid-row-gap:0.625em;
+}
+.x2{
+    grid-column: span 2;
 }
 /*
 ******************************************************************
-                        CONTAINER
+                        SORTING
 ******************************************************************
 */
-.container{
-    margin-top: 5rem;
-    display: flex; 
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.sorted{
+    margin-top: 3rem;
+    display:block;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
 }
-/*
-******************************************************************
-                        ITEMS
-******************************************************************
-*/
-.sort{
-    display: flex;
-    justify-content: space-around;
-    height: 1.5rem;
-}
-.sort li{
-    margin-right: 2rem;
-}
-.sort li:hover{
-    color: #59d4d4;
-    cursor: pointer;
+.sorted li{
+    display: inline-block;
+    margin-right: 1rem;
 }
 .active{
     color: #59d4d4;
 }
-.item{
-    position: relative;
-    box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
-    width: 20rem;
-    margin-bottom: 2rem;
-}
-.item img{
-    width: inherit;
-}
-.item h2{
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-weight: normal;
-}
-.item h2 span{
-    font-weight: bold;
-    font-size: 200%;
-}
-.item .info{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: white;
-    border-radius: 100%;
-    background-color: rgba(0,0,0,0.15);
-    box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
+a:hover, li:hover{
+    color: #59d4d4;
+    cursor: pointer;
 }
 /*
 ******************************************************************
@@ -128,8 +110,11 @@ footer{
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2rem 0;
+}
+.list{
+    width: 40%;
 }
 .awards{
     background-color: #333;
@@ -144,6 +129,10 @@ footer{
 }
 .social-media img{
     height: 3rem;
+    margin-right: 2rem;
+}
+.social-media img:last-of-type{
+    margin-right: 0;
 }
 .tm{
     width: 90%;
@@ -189,38 +178,35 @@ footer{
 }
 /*
 ******************************************************************
-                        GRIDVIEW
-******************************************************************
-*/
-.feature{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row:auto auto;
-    grid-column-gap: 0.625em;
-    grid-row-gap:0.625em;
-}
-@media (min-width:728px){
-    .feature{
-        display:flex;
-        justify-content: space-evenly;
-        flex: 0 1 48%;
-    }
-}
-/*
-******************************************************************
                         MEDIA QUERIES
 ******************************************************************
 */
-@media (min-width: 768px) {
+@media (min-width: 700px){
+ 
+ .feature-layout{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .feature{
+       flex:0 1 48%;
+       height: 70vw;
+    }
+    .sorted{
+        display:block;
+    }
     .icon-view{
         display: none;
         float: none;
     }
     .list-view{
-        display: flex;
-        justify-content: flex-end;
+        display:flex;
+        justify-content: space-between;
     }
-    .list-view li{
-        margin-right: 2rem;
+    .links{
+        display: flex;
+    }
+    .links li{
+        margin-right: 1rem;
     }
 }
+ 
