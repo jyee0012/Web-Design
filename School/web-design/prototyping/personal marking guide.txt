@@ -1,7 +1,7 @@
 Personas & User Stories:
 Personas (2)		/3 - Done
-User Stories(6)		/3 - Working 4/6
-Scope of Features(list)	/1 - Working
+User Stories(6)		/3 - Done
+Scope of Features(list)	/1 - Done?
 
 Information Architecture:
 Content Organization	/3 - Done
