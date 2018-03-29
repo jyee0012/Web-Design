@@ -8,10 +8,18 @@ Content Organization	/3 - Done
 Sitemap Flowchart	/3 - Done
 Navigation		/1 - Done
 
-Digital Wireframing:
+Digital Wireframing:	
 Responsive Design	/10- 
 Low-fidelity Focus	/3 - 
 Navigation		/5 - 
 
 Total: 			/32
 
+6 pages - 3 version of each
+Pages:			0/6
+	Home-page: 		2/3
+	Display-Activities-page	0/3
+	Displays-page		0/3
+	About-us-page		0/3
+	Contact-page		0/3
+	Register-page		0/3
