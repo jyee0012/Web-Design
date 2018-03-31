@@ -1,122 +1,102 @@
 <!DOCTYPE html>
-<html>
 
+<html>
     <head>
         <meta charset="utf-8">
-        <title>Avenue Fashion</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Avenue Fashion - Lookbook</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet"> 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/utils.css">
-        <link rel="stylesheet" href="css/styles.css">       
-      </head>
-    <body> 
-      <nav class="mobile-menu" role="mobile-controls">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <nav class="mobile-menu" role="mobile-controls">
             <ul class="site-links">
                 <li class="site-link" role="url-request" data-url="#">MENS</li>
                 <li class="site-link" role="url-request" data-url="#">WOMENS</li>
                 <li class="site-link" role="url-request" data-url="#">THE BRAND</li>
                 <li class="site-link" role="url-request" data-url="#">LOCAL STORES</li>
-                <li class="site-link" role="url-request" data-url="lookbook.html">LOOK BOOK</li>
+                <li class="site-link" role="url-request" data-url="#">LOOK BOOK</li>
             </ul>
         </nav>
-      <nav class="control-strip">
-             <ul class="icon-view">
-                <li class="company-name"><a href="index.html"><strong>Avenue</strong> Fashion</a></li>
-               <li><i class="material-icons" role="open-menu-button">menu</i></li>
-             </ul>
+        <nav class="site-nav clearfix">
+            <h1><strong>AVENUE</strong> FASHION</h1>
+            <ul class="icon-view">
+                <li><i class="material-icons menu" role="open-menu-button">menu</i></li>
+            </ul>
                 <ul class="list-view">
-                    <li class="company-name"><a href="index.html"><strong>Avenue</strong> Fashion</a></li>
-                    <ul class="links">
                     <li><a href="#">MENS</a></li>
                     <li><a href="#">WOMENS</a></li>
                     <li><a href="#">THE BRAND</a></li>
                     <li><a href="#">LOCAL STORES</a></li>
-                    <li><a href="lookbook.html">LOOK BOOK</a></li>
-                    </ul>
+                    <li><a href="#">LOOK BOOK</a></li>
                 </ul>
-      </nav>         
-<main>    
-  <div class="banner-image">
-    <h1>AVE</h1>
-    <button class="btn shop-button">SHOP MEN'S COLLECTION</button>
-  </div>
-          <ul class="sorted">
-            <li class="active">POPULAR</li>
-            <li>NEW ARRIVALS</li>
-            <li>BEST SELLERS</li>
-            <li>SPECIAL OFFERS</li>
-            <li>COMING SOON</li>
-          </ul>
-        <div class="feature-layout">
-          <div class="feature">
-            <aside class="grid-cell">
-              <figure>
-                <img src="img/small-4.jpg" alt="">
-                 <figcaption class="icons">
-                    £89.99 
+            </nav>
+            <section class="container">
+                <ul class="sort">
+                    <li class="active">LATEST</li>
+                    <li>MOST LIKED</li>
+                    <li>BEST SELLERS</li>
+                    <li>PRICE LOW TO HIGH</li>
+                    <li>PRICE HIGH TO LOW</li>
+                </ul>
+                <div class="item">
+                    <img src="img/m1.png" alt="M1">
+                    <h2>REF<span>M1</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-              </figure>
-            </aside>
-        
-            <aside class="grid-cell">
-              <figure>
-                <img src="img/small-3.jpg" alt="">
-                 <figcaption class="icons">
-                    £47.50 
+                </div>
+                <div class="item">
+                    <img src="img/w1.png" alt="M1">
+                    <h2>REF<span>W1</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-              </figure>
-            </aside>
-        
-            <aside class="grid-cell x2">
-              <figure>
-                <img src="img/large-2.jpg" alt="">
-                 <figcaption class="icons">
-                    £69.95 
+                </div>
+                <div class="item jane">
+                    <img src="img/jane.png" alt="M1">
+                    <h2><strong>JANE'S</strong> LOOKBOOK</h2>
+                    <h3>GET THE LOOK FOR UNDER £200!</h3>
+                    <p>
+                        We invited actress Jane Marshall to join us for the day and choose her perfect outfit from our vast range of womens fashion.
+                    </p>
+                    <p>This is of course not true as this is just a design for a website and this is simply filler text.</p>
+                </div>
+                <div class="item">
+                    <img src="img/mj1.png" alt="M1">
+                    <h2>REF<span>MJ1</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-              </figure>
-            </aside>
-          </div>
-
-          <div class="feature">
-            <aside class="grid-cell x2">
-              <figure>
-                <img src="img/large-1.jpg" alt="">
-                 <figcaption class="icons">
-                    <span class="crossthrough">£107</span>  £89.99
+                </div>
+                <div class="item">
+                    <img src="img/m2.png" alt="M1">
+                    <h2>REF<span>M2</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-              </figure>
-            </aside>
-              <aside class="grid-cell">
-                <figure>
-                  <img src="img/small-1.jpg" alt="">
-                 <figcaption class="icons">
-                    £29.95 
+                </div>
+                <div class="item">
+                    <img src="img/w2.png" alt="M1">
+                    <h2>REF<span>W2</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-                </figure>
-              </aside>
-          
-              <aside class="grid-cell">
-                <figure>
-                  <img src="img/small-2.jpg" alt="">
-                 <figcaption class="icons">
-                    £34.79 
+                </div>
+                <div class="item">
+                    <img src="img/w3.png" alt="M1">
+                    <h2>REF<span>W3</span></h2>
                     <i class="material-icons info">info</i>
-                </figcaption> 
-                </figure>
-              </aside>
-          
-            </div>
-          
-        </div>
-</main>
+                </div>
+                <div class="item win">
+                    <img src="img/win.png" alt="M1">
+                    <h2>WIN A NEW LOOK</h2>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="item">
+                    <img src="img/w4.png" alt="M1">
+                    <h2>REF<span>W4</span></h2>
+                    <i class="material-icons info">info</i>
+                </div>
+            </section>
             <footer>
                 <div class="site-map">
                     <div class="list">
@@ -146,7 +126,7 @@
                             <li>Men's lookbook</li>
                             <li>Women's lookbook</li>
                             <li>Lookbook RSS feed</li>
-                            <li><a href="lookbook.html" >View your lookbook</a></li>
+                            <li>View your lookbook</li>
                             <li>Delete your lookbook</li>
                         </ul>
                     </div>
@@ -173,5 +153,4 @@
             </footer>
         <script src="js/mobile-menu.js"></script>
     </body>
-
-    </html>
+</html>

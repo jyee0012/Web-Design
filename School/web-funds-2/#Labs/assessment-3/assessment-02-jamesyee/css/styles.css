@@ -32,12 +32,14 @@ a{
     top:0;
     left:0;
     width:100%;
-    background-color:#fff;
-    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
     padding:0.5em;
     min-width:320px;
     z-index: 99999;
     user-select: none;
+}
+.control-strip.lookbook{
+    background-color:#fff;
+    /* box-shadow: 0 0 8px 1px rgba(0,0,0,0.9); */
 }
 .icon-view{
     display:flex;
@@ -47,6 +49,25 @@ a{
 .list-view{
     display:none;
 } 
+.btn{
+    background-color: rgba(0,0,0,0);
+    padding: 2vw 3vw;
+    color: #575153;
+    border: 2px solid #575153;
+}
+/*
+******************************************************************
+                      BANNER
+******************************************************************
+*/
+.banner-image{
+    display: none;
+}
+.banner.lookbook{
+    background-image: linear-gradient(to bottom rgba(33,33,33,0.75)), url(../img/banner.png);
+    width: 100%;
+    height: 40vw;
+}
  /*
 ******************************************************************
                        CSS GRID LAYOUT BASICS
@@ -59,6 +80,7 @@ main{
 
 .grid-cell img{
     width:100%;
+    height: 100%;
 }
 
 .feature-layout{
@@ -69,9 +91,103 @@ main{
     grid-row: auto auto;
     grid-column-gap:0.625em;
     grid-row-gap:0.625em;
+    margin-bottom: 1rem;
 }
 .x2{
     grid-column: span 2;
+}
+
+/*
+******************************************************************
+                        GRID CELL CONTENT
+******************************************************************
+*/
+.grid-cell{
+    position: relative;
+}
+.icons{
+    position: absolute;
+    width: 100%;
+    top: 1vw;
+    left: 1vw;
+    color: #9a9a9a;
+}
+.crossthrough{
+    text-decoration: line-through;
+}
+.icons .info{
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    color: white;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.35);
+}
+.icons.jane{
+    width: 20vw;
+    color: #575153;
+}
+.icons.jane h2{
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: normal;
+}
+.icons.jane h3{
+    font-size: 1vw;
+    font-weight: normal;
+    line-height: 3;
+}
+.icons.jane p{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+.icons.jane .btn{
+    padding: 1vw 2vw;
+}
+.grid-cell.win{
+    background-image: url(../img/win-bg.png);
+    background-color: rgba(0,0,0,0);
+}
+.grid-cell.win img{
+    display: none;
+}
+.icons.win{
+    width: 100%;
+    color: #575153;
+}
+.icons.win h2{
+    margin-top: 0.2rem;
+    font-size: 4vw;
+    font-weight: normal;
+}
+.icons.win h3{
+    font-size: 1.2vw;
+    line-height: 3;
+}
+.icons.win p{
+    margin-bottom: 0.5rem;
+    font-size: 1.5vw; 
+    width: 35vw;
+}
+.icons.win .bigger{
+    font-size: 120%;
+    font-weight: bold;
+}
+.icons.win .btn{
+    padding: 1vw 2vw;
+}
+.icons.win .win-newlook{
+    color: #00c8c8;
+    font-size: 4vw;
+    line-height: 1.2;
+}
+.icons.win .big-win{
+    font-size: 8vw;
+    line-height: 1;
+}
+.win-newlook .win{
+    font-size: 8vw;
+    line-height: 1;
 }
 /*
 ******************************************************************
@@ -104,10 +220,11 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    margin-top: 3rem;
 }
 .site-map{
     width: 80%;
+    font-size: 2vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -119,17 +236,18 @@ footer{
 .awards{
     background-color: #333;
     color: white;
-    font-size: 175%;
-    padding: 5rem;
+    font-size: 3vw;
+    padding: 4vw;
     text-align: center;
 }
 .social-media{
     background-color: #00c8c8;
-    padding: 5rem 7rem;
+    padding: 8vw 7vw;
 }
 .social-media img{
-    height: 3rem;
+    height: 3vw;
     margin-right: 2rem;
+    vertical-align: middle;
 }
 .social-media img:last-of-type{
     margin-right: 0;
@@ -181,15 +299,54 @@ footer{
                         MEDIA QUERIES
 ******************************************************************
 */
-@media (min-width: 700px){
- 
- .feature-layout{
+@media (min-width: 900px){
+    .banner-image{
+        display: block;
+        margin-top: -3rem;
+        height: 50vw;
+        width: 100%;
+        background-image: url(../img/banner-image.png);
+        background-size: 60%; 
+        background-position-x: 5%;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+    .banner-image h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        font-size: 30vw;
+        letter-spacing: 10vw;
+        color: #575153;
+    }
+    .banner-image .shop-button{
+        position: absolute;
+        top: 80%;
+        right: 10%;
+    }
+    .feature-layout{
         display:flex;
         justify-content: space-evenly;
+
     }
     .feature{
-       flex:0 1 48%;
-       height: 70vw;
+        flex:0 1 48%;
+    }
+    .feature-layout.lookbook{
+        display: block;
+    }
+    .feature-layout.lookbook .feature{
+        height: inherit;
+        display: flex;
+        justify-content: space-around;
+    }
+    .feature-layout.lookbook .grid-cell{
+        display: inline-block;
+        background-color: #ebebe9;
+        box-shadow: 0 0 8px 1px rgba(0,0,0,0.35);
+        margin-right: 1rem;
     }
     .sorted{
         display:block;
@@ -208,5 +365,32 @@ footer{
     .links li{
         margin-right: 1rem;
     }
+    .site-map{
+        font-size: inherit;
+    }
+    .icons.win h2{
+        font-size: 3vw;
+    }
+    .icons.win h3{
+        font-size: 1vw;
+    }
+    .icons.win p{
+        font-size: 1.2vw;
+    }
+    .icons.win .win-newlook{
+        position: absolute;
+        text-align: right;
+        color:inherit;
+        right: 2rem;
+        top: 70%;
+        font-size: 4vw;
+        transform: translate(0, -60%);
+        width: 18rem;
+        color: #00c8c8;
+    }
+    .grid-cell.win img{
+        display: block;
+    }
+    
 }
  
