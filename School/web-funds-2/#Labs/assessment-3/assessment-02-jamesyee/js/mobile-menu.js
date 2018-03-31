@@ -26,7 +26,7 @@
           TweenLite.to(mobileMenu, 1, {top:"-60%", ease: Power4.easeOut});
        }else{
            menuViewState = true;
-           TweenLite.to(mobileMenu, 1, {top:"0", opacity:1, ease: Power4.easeOut});
+           TweenLite.to(mobileMenu, 1, {top:"5%", opacity:1, ease: Power4.easeOut});
        }
       }
 
