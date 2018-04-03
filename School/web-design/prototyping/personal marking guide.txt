@@ -17,9 +17,9 @@ Total: 			/32
 
 6 pages - 3 version of each
 Pages:			0/6
-	Home-page: 		2/3
+	Home-page: 		3/3
 	Display-Activities-page	0/3
 	Displays-page		0/3
-	About-us-page		0/3
-	Contact-page		0/3
+	About-us-page		3/3
+	Contact-page		0/3 - Working
 	Register-page		0/3
