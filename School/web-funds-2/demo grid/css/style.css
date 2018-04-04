@@ -1,0 +1,82 @@
+ 
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+      height: 100%;
+      position:relative;    
+     color:#FFF;
+     /* Variable Declaration */
+     --bg-color: blue;
+     /* Let bg-color be color blue */
+}
+ /*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+ p, h1, h2{
+     font-size:1em;
+ }
+ p, h2{
+      
+ }
+.material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:rgb(168, 165, 165);
+}
+ 
+ /*
+******************************************************************
+                          GRID
+******************************************************************
+*/
+
+.grid-container{
+    /* Variable Declaration */
+    --grid-width: 1040px;
+    --column-count: 4;
+    --gutter-space: 24px;
+    margin: 0 auto;
+    width: var(--grid-width);
+    height: 200vh;
+    background-image: url(../img/grid.png);
+}
+.col-1, .col-2,.col-3,.col-4{
+    height: 250px;
+    background-color: darkblue;
+    /*float: left;*/
+}
+.col-1{
+    width: 242px;
+}
+.col-2{
+    width: calc( (242px * 2) + (24px));
+}
+.col-3{
+    width: calc( (242px * 3) + (24px * 2));
+}
+.col-4{
+    width: calc( (242px * 4) + (24px * 3));
+}
+ /*
+******************************************************************
+                          GRID
+******************************************************************
+*/
+.push-1{
+    margin-right: calc(242px + 24px);
+}
+.push-2{
+    margin-right: calc( (242px * 2) + (24px));
+}
+.push-3{
+    margin-right: calc( (242px * 3) + (24px * 2));
+}
+.push-4{
+    margin-right: calc( (242px * 4) + (24px * 3));
+}
+.clr-mrg-right{
+    margin-right: 0;
+}
