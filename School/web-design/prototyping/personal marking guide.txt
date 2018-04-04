@@ -9,9 +9,9 @@ Sitemap Flowchart	/3 - Done
 Navigation		/1 - Done
 
 Digital Wireframing:	
-Responsive Design	/10- 
-Low-fidelity Focus	/3 - 
-Navigation		/5 - 
+Responsive Design	/10- Done
+Low-fidelity Focus	/3 - Done
+Navigation		/5 - Done
 
 Total: 			/32
 
@@ -21,5 +21,5 @@ Pages:			0/6
 	Display-Activities-page	0/3
 	Displays-page		0/3
 	About-us-page		3/3
-	Contact-page		0/3 - Working
-	Register-page		0/3
+	Contact-page		3/3 - Working
+	Register-page		3/3
