@@ -1,0 +1,61 @@
+ 
+  body{
+      font-size:100%;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      line-height: 1.5;
+      height: 100%;
+      position:relative;    
+     color:#FFF;
+}
+ /*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+ p, h1, h2{
+     font-size:1em;
+ }
+ p, h2{
+      
+ }
+.material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:rgb(168, 165, 165);
+}
+ 
+ /*
+******************************************************************
+                          GRID
+******************************************************************
+*/
+.grid-container{
+    margin: 0 auto;
+    --grid-width:1040px;
+    --grid-col:6;
+    --grid-gutter:12px;
+    --grid-cell: calc((1080px - (12 * 5) / 6));
+    width: var(--grid-width);
+    height: 200vh;
+    background-image: url(../img/grid.png);
+}
+.row{
+    clear: both;
+}
+.col-1-6, .col-2-6, .col-3-6, .col-4-6, .col-5-6, .col-6-6{
+    display: block;
+    float: left;
+    height: 250px;
+    /*background-color: hotpink;*/
+    margin-right: 12px; 
+}
+.col-1-6{
+    /* ( width/columns * 100 ) - gutter * number of columns */
+    /*width: calc( ((var(--grid-width)/var(--grid-col)) * 100) - (var(--grid-gutter) * 100%) );*/
+    width: calc(var(--grid-cell));
+    background-color: orange;
+}
+.col-1-6{
+    width: calc( (var(--grid-cell) * 2) + var(--grid-gutter) );
+    background-color: purple;
+}
