@@ -1,0 +1,30 @@
+body{
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+    position: relative;
+    background-color: tomato;
+}
+.login{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* default control styles */
+input,label{
+    display: block;
+}
+/* control styles using attribute selector */
+input[name="username"]{
+    border-radius: 0.625em;
+    padding-left: 0.625em;
+    outline: none;
+}
+/* vendor prefix check support */
+::placeholder{
+    color: grey;
+    opacity: 0.85;
+    font-size: 0.8em;
+}
