@@ -1,0 +1,180 @@
+.gallery-description p {
+	font-size: 150%;
+	color: rgb(173, 173, 173);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: black;
+	text-transform: uppercase;
+}
+body {
+	color: black !important;
+}
+#indexProjects .project h2 {
+	color: white;
+}
+
+#logo a {
+	font-family: 'proxima-nova', sans-serif;
+	color: #fff;
+}
+.centered {
+	text-align: center;
+}
+
+.logo-header {
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ddd;
+}
+
+	.logo-header img {
+		width: 300px;
+	}
+
+.full-width-image {
+	margin: 0 -52px 20px;
+}
+.full-width-image img {
+	max-width: 100%;
+}
+
+#map-content h4, #map-content p {
+	margin: 0;
+}
+#map-content p {
+	font-size: 14px;
+	line-height: 19px;
+}
+#map-body-content {
+	font-size: 0.8em;
+}
+#map_canvas {
+	height: 350px;
+	margin: 30px -51px 0 -51px;
+}
+
+.page-logo {
+	width: 150px;
+	height: auto;
+	margin-top: -14px;
+}
+.page-logo.hidden-desktop {
+	display: none;
+}
+
+.page-logo-wrapper {
+	text-align: right;
+}
+.page-logo-wrapper-secondary .page-logo {
+	text-align: center;
+	margin: 0 auto;
+}
+#mainContent {
+	background-color: rgba(255,255,255,0.82) !important;
+}
+
+
+#pageWrapper {
+	background-size: cover;
+	*background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+
+#page-title {
+	font-size: 400%;
+	margin-top: 0;
+	margin-bottom: 15px;
+	line-height: 1.1em;
+}
+
+.notice {
+	background: #141414;
+	padding: 0 20px;
+	color: #ddd;
+  display: none;
+}
+
+.notice-bordered {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 1px 20px;
+}
+
+.notice-head {
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 95%;
+}
+
+
+.social-link {
+	color: #8CACF0;
+}
+
+.social-link:hover,
+.social-link:focus {
+	color: #BBC9E9;
+}
+@media (max-width: 650px) {
+
+	#page-title {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.page-logo.hidden-desktop {
+		display: block;
+		text-align: center;
+		width: 150px;
+	}
+
+	.page-logo-wrapper {
+		display: none;
+	}
+
+	.notice {
+		text-align: center;
+	}
+	.notice-head {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo-header img {
+		width: 150px;
+	}
+
+	.full-width-image {
+		margin: 0 -15px;
+	}
+	.page-logo {
+		width: 200px;
+	}
+
+	#map-canvas {
+		margin: -51px 0 0;
+		overflow: hidden;
+	}
+
+	#page-title {
+		font-size: 200%;
+	}
+	#pageWrapper {
+		background-size: 480px auto;
+	}
+
+	#main-logo {
+		bottom: 58px;
+	}
+	#main-logo img {
+		width: 100px;
+	}
+}
+
