@@ -16,9 +16,9 @@ footer{
     display: flex;
     justify-content: space-around;
     margin: 2rem 0;
-}
-.list{
-    width: 40%;
+    .list{
+        width: 40%;
+    }        
 }
 .awards{
     background-color: #333;
@@ -30,14 +30,14 @@ footer{
 .social-media{
     background-color: #00c8c8;
     padding: 8vw 7vw;
-}
-.social-media img{
-    height: 3vw;
-    margin-right: 2rem;
-    vertical-align: middle;
-}
-.social-media img:last-of-type{
-    margin-right: 0;
+    img{
+        height: 3vw;
+        margin-right: 2rem;
+        vertical-align: middle;
+    }
+    img:last-of-type{
+        margin-right: 0;
+    }
 }
 .tm{
     width: 90%;
@@ -46,4 +46,7 @@ footer{
     text-align: center;
     padding: 0.5rem;
     margin-top: 1rem;
+}
+@media (min-width:900px){
+    
 }

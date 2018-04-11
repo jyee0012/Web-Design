@@ -7,20 +7,61 @@
 .banner-image{
     display: none;
 }
-.banner.lookbook{
-    background-image: linear-gradient(to bottom, rgba(33,33,33,0.75), rgba(33,33,33,0.75)) , url(../img/banner.png);
-    width: 100%;
-    height: 50vw;
-    background-size: cover;
-    text-align: center;
-    color: white;
+.banner{
+    .lookbook{
+        background-image: linear-gradient(to bottom, rgba(33,33,33,0.75), rgba(33,33,33,0.75)) , url(../img/banner.png);
+        width: 100%;
+        height: 50vw;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        h1{
+            padding-top: 6rem;
+            font-size: 5vw;
+            font-weight: normal;
+        }
+        p{
+            font-size: 3vw;
+        
+        }
+    }
 }
-.banner.lookbook h1{
-    padding-top: 6rem;
-    font-size: 5vw;
-    font-weight: normal;
-}
-.banner.lookbook p{
-    font-size: 3vw;
-
+@media (min-width:900px){
+    
+    .banner-image{
+        display: block;
+        margin-top: -3rem;
+        height: 50vw;
+        width: 100%;
+        background-image: url(../img/banner-image.png);
+        background-size: 60%; 
+        background-position-x: 5%;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        text-align: center;
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            font-size: 30vw;
+            letter-spacing: 10vw;
+            color: #575153;
+        }
+        .shop-button{
+            position: absolute;
+            top: 80%;
+            right: 10%;
+        }
+    }
+    .banner.lookbook{
+        height: 20vw;  
+        h1{
+            padding-top: 3rem;
+            font-size: 4vw;
+        }
+        p{
+            font-size: 3vw;
+        }
+    }
 }

@@ -16,67 +16,8 @@
 ******************************************************************
 */
 @media (min-width: 900px){
-    .banner-image{
-        display: block;
-        margin-top: -3rem;
-        height: 50vw;
-        width: 100%;
-        background-image: url(../img/banner-image.png);
-        background-size: 60%; 
-        background-position-x: 5%;
-        background-repeat: no-repeat;
-        background-color: #f8f8f8;
-        text-align: center;
-    }
-    .banner-image h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        font-size: 30vw;
-        letter-spacing: 10vw;
-        color: #575153;
-    }
-    .banner-image .shop-button{
-        position: absolute;
-        top: 80%;
-        right: 10%;
-    }
-    .banner.lookbook{
-        height: 20vw;  
-    }
-    .banner.lookbook h1{
-        padding-top: 3rem;
-        font-size: 4vw;
-    }
-    .banner.lookbook p{
-        font-size: 3vw;
-    }
-    .feature-layout{
-        display:flex;
-        justify-content: space-evenly;
-
-    }
-    .feature{
-        flex:0 1 48%;
-    }
-    .feature-layout.lookbook{
-        display: block;
-    }
-    .feature-layout.lookbook .feature{
-        height: inherit;
-        display: flex;
-        justify-content: space-around;
-    }
-    .feature-layout.lookbook .grid-cell{
-        display: inline-block;
-        background-color: #ebebe9;
-        box-shadow: 0 0 8px 1px rgba(0,0,0,0.35);
-        margin-right: 1rem;
-    }
-    .sorted{
-        display:block;
-    }
+    
+    
     .icon-view{
         display: none;
         float: none;

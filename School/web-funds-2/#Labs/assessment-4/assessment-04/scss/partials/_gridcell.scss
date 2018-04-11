@@ -12,82 +12,87 @@
     top: 1vw;
     left: 1vw;
     color: #9a9a9a;
+    .info{
+        position: absolute;
+        top: 1vw;
+        right: 2vw;
+        color: white;
+        border-radius: 100%;
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.35);
+        background-color: rgba(0,0,0,0.35);
+    }
+}
+
+.icons.jane{
+    width: 20vw;
+    color: #575153;
+    h2{
+        font-size: 3vw;
+        line-height: 1;
+        font-weight: normal;
+    }
+    h3{
+        font-size: 1vw;
+        font-weight: normal;
+        line-height: 3;
+    }
+    p{
+        font-size: 1vw;
+        margin-bottom: 1vw;
+    }
+    .btn{
+        padding: 1vw 2vw;
+    }
 }
 .crossthrough{
     text-decoration: line-through;
 }
-.icons .info{
-    position: absolute;
-    top: 1vw;
-    right: 2vw;
-    color: white;
-    border-radius: 100%;
-    box-shadow: 0 0 5px 1px rgba(0,0,0,0.35);
-    background-color: rgba(0,0,0,0.35);
-}
-.icons.jane{
-    width: 20vw;
-    color: #575153;
-}
-.icons.jane h2{
-    font-size: 3vw;
-    line-height: 1;
-    font-weight: normal;
-}
-.icons.jane h3{
-    font-size: 1vw;
-    font-weight: normal;
-    line-height: 3;
-}
-.icons.jane p{
-    font-size: 1vw;
-    margin-bottom: 1vw;
-}
-.icons.jane .btn{
-    padding: 1vw 2vw;
-}
 .grid-cell.win{
     background-image: url(../img/win-bg.png);
     background-color: rgba(0,0,0,0);
+    img{
+        display: none;
+    }
 }
-.grid-cell.win img{
-    display: none;
-}
+.grid-cell.win 
 .icons.win{
     width: 100%;
     color: #575153;
+    h2{
+        margin-top: 0.2rem;
+        font-size: 4vw;
+        font-weight: normal;
+    }
+    h3{
+        font-size: 1.2vw;
+        line-height: 3;
+    }
+    p{
+        margin-bottom: 0.5rem;
+        font-size: 1.5vw; 
+        width: 35vw;
+    }
+    .bigger{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    .btn{
+        padding: 1vw 2vw;
+    }
+    .win-newlook{
+        color: #00c8c8;
+        font-size: 4vw;
+        line-height: 1.2;
+        .win{
+            font-size: 8vw;
+            line-height: 1;
+        }
+    }
+    .big-win{
+        font-size: 8vw;
+        line-height: 1;
+    }
 }
-.icons.win h2{
-    margin-top: 0.2rem;
-    font-size: 4vw;
-    font-weight: normal;
-}
-.icons.win h3{
-    font-size: 1.2vw;
-    line-height: 3;
-}
-.icons.win p{
-    margin-bottom: 0.5rem;
-    font-size: 1.5vw; 
-    width: 35vw;
-}
-.icons.win .bigger{
-    font-size: 120%;
-    font-weight: bold;
-}
-.icons.win .btn{
-    padding: 1vw 2vw;
-}
-.icons.win .win-newlook{
-    color: #00c8c8;
-    font-size: 4vw;
-    line-height: 1.2;
-}
-.icons.win .big-win{
-    font-size: 8vw;
-    line-height: 1;
-}
-.win-newlook .win{
-    font-size: 8vw;
-    line-height: 1;
+@media (min-width:900px){
+    
 }

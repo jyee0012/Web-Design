@@ -26,3 +26,27 @@ main{
 .x2{
     grid-column: span 2;
 }
+@media (min-width:900px){
+    .feature-layout{
+        display:flex;
+        justify-content: space-evenly;
+
+    }
+    .feature{
+        flex:0 1 48%;
+    }
+    .feature-layout.lookbook{
+        display: block;
+        .feature{
+            height: inherit;
+            display: flex;
+            justify-content: space-around;
+        }
+        .grid-cell{
+            display: inline-block;
+            background-color: #ebebe9;
+            box-shadow: 0 0 8px 1px rgba(0,0,0,0.35);
+            margin-right: 1rem;
+        }
+    }
+}

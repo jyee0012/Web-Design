@@ -658,7 +658,7 @@ a {
   display: none;
 }
 
-.banner.lookbook {
+.banner .lookbook {
   background-image: linear-gradient(to bottom, rgba(33, 33, 33, 0.75), rgba(33, 33, 33, 0.75)), url(../img/banner.png);
   width: 100%;
   height: 50vw;
@@ -667,14 +667,53 @@ a {
   color: white;
 }
 
-.banner.lookbook h1 {
+.banner .lookbook h1 {
   padding-top: 6rem;
   font-size: 5vw;
   font-weight: normal;
 }
 
-.banner.lookbook p {
+.banner .lookbook p {
   font-size: 3vw;
+}
+
+@media (min-width: 900px) {
+  .banner-image {
+    display: block;
+    margin-top: -3rem;
+    height: 50vw;
+    width: 100%;
+    background-image: url(../img/banner-image.png);
+    background-size: 60%;
+    background-position-x: 5%;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  .banner-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 30vw;
+    letter-spacing: 10vw;
+    color: #575153;
+  }
+  .banner-image .shop-button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+  }
+  .banner.lookbook {
+    height: 20vw;
+  }
+  .banner.lookbook h1 {
+    padding-top: 3rem;
+    font-size: 4vw;
+  }
+  .banner.lookbook p {
+    font-size: 3vw;
+  }
 }
 
 /*
@@ -705,6 +744,30 @@ main {
   grid-column: span 2;
 }
 
+@media (min-width: 900px) {
+  .feature-layout {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .feature {
+    flex: 0 1 48%;
+  }
+  .feature-layout.lookbook {
+    display: block;
+  }
+  .feature-layout.lookbook .feature {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+  }
+  .feature-layout.lookbook .grid-cell {
+    display: inline-block;
+    background-color: #ebebe9;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.35);
+    margin-right: 1rem;
+  }
+}
+
 /*
 ******************************************************************
                         GRID CELL CONTENT
@@ -720,10 +783,6 @@ main {
   top: 1vw;
   left: 1vw;
   color: #9a9a9a;
-}
-
-.crossthrough {
-  text-decoration: line-through;
 }
 
 .icons .info {
@@ -762,6 +821,10 @@ main {
   padding: 1vw 2vw;
 }
 
+.crossthrough {
+  text-decoration: line-through;
+}
+
 .grid-cell.win {
   background-image: url(../img/win-bg.png);
   background-color: transparent;
@@ -771,49 +834,58 @@ main {
   display: none;
 }
 
+.grid-cell.win
 .icons.win {
   width: 100%;
   color: #575153;
 }
 
+.grid-cell.win
 .icons.win h2 {
   margin-top: 0.2rem;
   font-size: 4vw;
   font-weight: normal;
 }
 
+.grid-cell.win
 .icons.win h3 {
   font-size: 1.2vw;
   line-height: 3;
 }
 
+.grid-cell.win
 .icons.win p {
   margin-bottom: 0.5rem;
   font-size: 1.5vw;
   width: 35vw;
 }
 
+.grid-cell.win
 .icons.win .bigger {
   font-size: 120%;
   font-weight: bold;
 }
 
+.grid-cell.win
 .icons.win .btn {
   padding: 1vw 2vw;
 }
 
+.grid-cell.win
 .icons.win .win-newlook {
   color: #00c8c8;
   font-size: 4vw;
   line-height: 1.2;
 }
 
-.icons.win .big-win {
+.grid-cell.win
+.icons.win .win-newlook .win {
   font-size: 8vw;
   line-height: 1;
 }
 
-.win-newlook .win {
+.grid-cell.win
+.icons.win .big-win {
   font-size: 8vw;
   line-height: 1;
 }
@@ -844,6 +916,12 @@ a:hover, li:hover {
   cursor: pointer;
 }
 
+@media (min-width: 900px) {
+  .sorted {
+    display: block;
+  }
+}
+
 /*
 ******************************************************************
                         FOOTER
@@ -856,7 +934,7 @@ footer {
   margin-top: 3rem;
 }
 
-.site-map {
+footer .site-map {
   width: 80%;
   font-size: 2vw;
   margin: 0 auto;
@@ -865,11 +943,11 @@ footer {
   margin: 2rem 0;
 }
 
-.list {
+footer .site-map .list {
   width: 40%;
 }
 
-.awards {
+footer .awards {
   background-color: #333;
   color: white;
   font-size: 3vw;
@@ -877,22 +955,22 @@ footer {
   text-align: center;
 }
 
-.social-media {
+footer .social-media {
   background-color: #00c8c8;
   padding: 8vw 7vw;
 }
 
-.social-media img {
+footer .social-media img {
   height: 3vw;
   margin-right: 2rem;
   vertical-align: middle;
 }
 
-.social-media img:last-of-type {
+footer .social-media img:last-of-type {
   margin-right: 0;
 }
 
-.tm {
+footer .tm {
   width: 90%;
   background-color: #333;
   color: #858585;
@@ -945,66 +1023,6 @@ footer {
 ******************************************************************
 */
 @media (min-width: 900px) {
-  .banner-image {
-    display: block;
-    margin-top: -3rem;
-    height: 50vw;
-    width: 100%;
-    background-image: url(../img/banner-image.png);
-    background-size: 60%;
-    background-position-x: 5%;
-    background-repeat: no-repeat;
-    background-color: #f8f8f8;
-    text-align: center;
-  }
-  .banner-image h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    font-size: 30vw;
-    letter-spacing: 10vw;
-    color: #575153;
-  }
-  .banner-image .shop-button {
-    position: absolute;
-    top: 80%;
-    right: 10%;
-  }
-  .banner.lookbook {
-    height: 20vw;
-  }
-  .banner.lookbook h1 {
-    padding-top: 3rem;
-    font-size: 4vw;
-  }
-  .banner.lookbook p {
-    font-size: 3vw;
-  }
-  .feature-layout {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .feature {
-    flex: 0 1 48%;
-  }
-  .feature-layout.lookbook {
-    display: block;
-  }
-  .feature-layout.lookbook .feature {
-    height: inherit;
-    display: flex;
-    justify-content: space-around;
-  }
-  .feature-layout.lookbook .grid-cell {
-    display: inline-block;
-    background-color: #ebebe9;
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.35);
-    margin-right: 1rem;
-  }
-  .sorted {
-    display: block;
-  }
   .icon-view {
     display: none;
     float: none;

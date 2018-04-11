@@ -8,10 +8,10 @@
     display:block;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
-}
-.sorted li{
-    display: inline-block;
-    margin-right: 1rem;
+    li{
+        display: inline-block;
+        margin-right: 1rem;
+    }
 }
 .active{
     color: #59d4d4;
@@ -19,4 +19,9 @@
 a:hover, li:hover{
     color: #59d4d4;
     cursor: pointer;
+}
+@media (min-width:900px){
+    .sorted{
+        display:block;
+    }
 }
