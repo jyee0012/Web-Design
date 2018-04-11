@@ -1,0 +1,1049 @@
+/* border box model */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* css reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+img {
+  vertical-align: middle;
+}
+
+li, ul, ol {
+  list-style-type: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+  UTILITY CLASSES
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* UTILITY CLASS */
+.rmv-margin-right {
+  margin-right: 0;
+}
+
+.rmv-margin-left {
+  margin-left: 0;
+}
+
+.rmv-margin-top {
+  margin-top: 0;
+}
+
+.rmv-margin-bottom {
+  margin-bottom: 0;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+body {
+  font-size: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+/*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+.material-icons, .fas {
+  line-height: 0;
+  vertical-align: middle;
+  color: #c4c4c4;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+.control-strip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em;
+  min-width: 320px;
+  z-index: 99999;
+  user-select: none;
+  background-color: #fff;
+}
+
+.icon-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-view {
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  padding: 2vw 3vw;
+  color: #575153;
+  border: 2px solid #575153;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/*
+******************************************************************
+                      BANNER
+******************************************************************
+*/
+.banner-image {
+  display: none;
+}
+
+.banner.lookbook {
+  background-image: linear-gradient(to bottom, rgba(33, 33, 33, 0.75), rgba(33, 33, 33, 0.75)), url(../img/banner.png);
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.banner.lookbook h1 {
+  padding-top: 6rem;
+  font-size: 5vw;
+  font-weight: normal;
+}
+
+.banner.lookbook p {
+  font-size: 3vw;
+}
+
+/*
+******************************************************************
+                       CSS GRID LAYOUT BASICS
+******************************************************************
+*/
+main {
+  margin-top: 2.5em;
+  padding: 0 2.5em;
+}
+
+.grid-cell img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto auto;
+  grid-column-gap: 0.625em;
+  grid-row-gap: 0.625em;
+  margin-bottom: 1rem;
+}
+
+.x2 {
+  grid-column: span 2;
+}
+
+/*
+******************************************************************
+                        GRID CELL CONTENT
+******************************************************************
+*/
+.grid-cell {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  width: 100%;
+  top: 1vw;
+  left: 1vw;
+  color: #9a9a9a;
+}
+
+.crossthrough {
+  text-decoration: line-through;
+}
+
+.icons .info {
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+  color: white;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.icons.jane {
+  width: 20vw;
+  color: #575153;
+}
+
+.icons.jane h2 {
+  font-size: 3vw;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.icons.jane h3 {
+  font-size: 1vw;
+  font-weight: normal;
+  line-height: 3;
+}
+
+.icons.jane p {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+}
+
+.icons.jane .btn {
+  padding: 1vw 2vw;
+}
+
+.grid-cell.win {
+  background-image: url(../img/win-bg.png);
+  background-color: transparent;
+}
+
+.grid-cell.win img {
+  display: none;
+}
+
+.icons.win {
+  width: 100%;
+  color: #575153;
+}
+
+.icons.win h2 {
+  margin-top: 0.2rem;
+  font-size: 4vw;
+  font-weight: normal;
+}
+
+.icons.win h3 {
+  font-size: 1.2vw;
+  line-height: 3;
+}
+
+.icons.win p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5vw;
+  width: 35vw;
+}
+
+.icons.win .bigger {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.icons.win .btn {
+  padding: 1vw 2vw;
+}
+
+.icons.win .win-newlook {
+  color: #00c8c8;
+  font-size: 4vw;
+  line-height: 1.2;
+}
+
+.icons.win .big-win {
+  font-size: 8vw;
+  line-height: 1;
+}
+
+.win-newlook .win {
+  font-size: 8vw;
+  line-height: 1;
+}
+
+/*
+******************************************************************
+                        SORTING
+******************************************************************
+*/
+.sorted {
+  margin-top: 3rem;
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.sorted li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.active {
+  color: #59d4d4;
+}
+
+a:hover, li:hover {
+  color: #59d4d4;
+  cursor: pointer;
+}
+
+/*
+******************************************************************
+                        FOOTER
+******************************************************************
+*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.site-map {
+  width: 80%;
+  font-size: 2vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.list {
+  width: 40%;
+}
+
+.awards {
+  background-color: #333;
+  color: white;
+  font-size: 3vw;
+  padding: 4vw;
+  text-align: center;
+}
+
+.social-media {
+  background-color: #00c8c8;
+  padding: 8vw 7vw;
+}
+
+.social-media img {
+  height: 3vw;
+  margin-right: 2rem;
+  vertical-align: middle;
+}
+
+.social-media img:last-of-type {
+  margin-right: 0;
+}
+
+.tm {
+  width: 90%;
+  background-color: #333;
+  color: #858585;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/*
+******************************************************************
+                        MOBILE MENU
+******************************************************************
+*/
+.mobile-menu {
+  position: fixed;
+  top: -60%;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  background-color: #000;
+  z-index: 200;
+  padding: 2.5em 3em;
+  color: #fff;
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5em;
+}
+
+.site-link {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding-bottom: 0.5em;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+}
+
+.site-link:hover {
+  cursor: pointer;
+}
+
+/*
+******************************************************************
+                        MEDIA QUERIES
+******************************************************************
+*/
+@media (min-width: 900px) {
+  .banner-image {
+    display: block;
+    margin-top: -3rem;
+    height: 50vw;
+    width: 100%;
+    background-image: url(../img/banner-image.png);
+    background-size: 60%;
+    background-position-x: 5%;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  .banner-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 30vw;
+    letter-spacing: 10vw;
+    color: #575153;
+  }
+  .banner-image .shop-button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+  }
+  .banner.lookbook {
+    height: 20vw;
+  }
+  .banner.lookbook h1 {
+    padding-top: 3rem;
+    font-size: 4vw;
+  }
+  .banner.lookbook p {
+    font-size: 3vw;
+  }
+  .feature-layout {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .feature {
+    flex: 0 1 48%;
+  }
+  .feature-layout.lookbook {
+    display: block;
+  }
+  .feature-layout.lookbook .feature {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+  }
+  .feature-layout.lookbook .grid-cell {
+    display: inline-block;
+    background-color: #ebebe9;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.35);
+    margin-right: 1rem;
+  }
+  .sorted {
+    display: block;
+  }
+  .icon-view {
+    display: none;
+    float: none;
+  }
+  .list-view {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    display: flex;
+  }
+  .links li {
+    margin-right: 1rem;
+  }
+  .site-map {
+    font-size: inherit;
+  }
+  .icons.win h2 {
+    font-size: 3vw;
+  }
+  .icons.win h3 {
+    font-size: 1vw;
+  }
+  .icons.win p {
+    font-size: 1.2vw;
+  }
+  .icons.win .win-newlook {
+    position: absolute;
+    text-align: right;
+    color: inherit;
+    right: 2rem;
+    top: 70%;
+    font-size: 4vw;
+    transform: translate(0, -60%);
+    width: 18rem;
+    color: #00c8c8;
+  }
+  .grid-cell.win img {
+    display: block;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

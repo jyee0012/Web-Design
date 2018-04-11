@@ -1,0 +1,27 @@
+/*
+    NAVIGATION
+*/
+.sitenav{
+    .icon-view{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-view{
+        display: none;
+        justify-content: space-around;
+        li{
+            margin-right: 2rem;
+        }
+    }
+    padding: 0.2rem 0;
+}
+@media(min-width:700px){
+    .sitenav{
+        .icon-view{
+            display: none;
+        }
+        .list-view{
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+ /*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+.control-strip{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:0.5em;
+    min-width:320px;
+    z-index: 99999;
+    user-select: none;
+    background-color:#fff;
+}
+.icon-view{
+    display:flex;
+    justify-content: space-between;
+}
+
+.list-view{
+    display:none;
+} 
+.btn{
+    background-color: rgba(0,0,0,0);
+    padding: 2vw 3vw;
+    color: #575153;
+    border: 2px solid #575153;
+}
+.btn:hover{
+    cursor: pointer;
+}
