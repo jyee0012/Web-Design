@@ -1,0 +1,25 @@
+/*
+   BASE
+   import icon fonts
+   import google fonts
+   import addition stlyes 
+
+   if you have an exisiting css just add the .scss extension and compile
+   into your workflow.
+
+*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+$base-font: 100%;
+$baseline: 1.5;
+$system-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$heading-font: 'Open Sans', sans-serif;
+$page-background: #fff;
+
+body{
+    background-color:$page-background;
+    font-family: $heading-font;
+    font-size: $base-font;
+    line-height: $baseline;
+}

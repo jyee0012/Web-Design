@@ -1,0 +1,10 @@
+@mixin add-border($border-size,$border-color){
+    border:$border-size solid $border-color;
+}
+
+@mixin add-background($url, $pos:relative, $size:cover, $repeat:no-repeat){
+    background-image: url($url);
+    background-position: $pos;
+    background-size: $size;
+    background-repeat: $repeat;
+}

@@ -1,0 +1,38 @@
+$blue-gradient: linear-gradient(to top( blue, red)); 
+$red-gradient: linear-gradient(to top(orange, purple)); 
+/*
+    1. Extension - writing a bunch of styles we can apply elsewhere
+        @extend
+    2. Inheritance & making shit different in different places.
+*/
+.listing{
+    background-color: hotpink;
+    /* How to extend the button base class */
+    button{
+        @extend .button-base;
+    }
+    @include add-border(4px, lightblue);
+}
+/* Extension */
+.button-base{
+    border-radius: 12px;
+    padding: 0.5em 1em;
+}
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    @extend .flex-row-center;
+    flex-direction: column;
+}
+.image{
+    width: 175px;
+    height: 175px;
+    background-color: peachpuff;
+    margin-right: 12px;
+    .first &{
+        background:blue;
+    }
+}
