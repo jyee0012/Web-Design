@@ -94,5 +94,29 @@
     }
 }
 @media (min-width:900px){
-    
+    .icons.win{
+        h2{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 1vw;
+        }
+        p{
+            font-size: 1.2vw;
+        }
+        .win-newlook{
+            position: absolute;
+            text-align: right;
+            color:inherit;
+            right: 2rem;
+            top: 70%;
+            font-size: 4vw;
+            transform: translate(0, -60%);
+            width: 18rem;
+            color: #00c8c8;
+        }
+    }
+    .grid-cell.win img{
+        display: block;
+    }
 }

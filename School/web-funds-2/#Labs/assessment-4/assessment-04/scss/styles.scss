@@ -9,6 +9,7 @@
 @import 'partials/sort';
 @import 'partials/footer';
 @import 'partials/mobile';
+@import 'partials/register';
 
 /*
 ******************************************************************
@@ -16,48 +17,8 @@
 ******************************************************************
 */
 @media (min-width: 900px){
-    
-    
-    .icon-view{
-        display: none;
-        float: none;
-    }
-    .list-view{
-        display:flex;
-        justify-content: space-between;
-    }
-    .links{
-        display: flex;
-    }
-    .links li{
-        margin-right: 1rem;
-    }
     .site-map{
         font-size: inherit;
     }
-    .icons.win h2{
-        font-size: 3vw;
-    }
-    .icons.win h3{
-        font-size: 1vw;
-    }
-    .icons.win p{
-        font-size: 1.2vw;
-    }
-    .icons.win .win-newlook{
-        position: absolute;
-        text-align: right;
-        color:inherit;
-        right: 2rem;
-        top: 70%;
-        font-size: 4vw;
-        transform: translate(0, -60%);
-        width: 18rem;
-        color: #00c8c8;
-    }
-    .grid-cell.win img{
-        display: block;
-    }
-    
 }
  

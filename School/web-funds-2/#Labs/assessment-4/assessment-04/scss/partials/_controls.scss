@@ -32,5 +32,18 @@
     cursor: pointer;
 }
 @media (min-width:900px){
-    
+    .icon-view{
+        display: none;
+        float: none;
+    }
+    .list-view{
+        display:flex;
+        justify-content: space-between;
+    }
+    .links{
+        display: flex;
+        li{
+            margin-right: 1rem;
+        }
+    }
 }

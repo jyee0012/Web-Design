@@ -1,0 +1,15 @@
+/*
+******************************************************************
+                      REGISTER
+******************************************************************
+*/
+.registry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* default control styles */
+    input,label{
+        display: block;
+    }
+}
