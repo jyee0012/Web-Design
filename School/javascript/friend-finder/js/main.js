@@ -19,6 +19,7 @@ document.querySelector('#menu').addEventListener('click', function (evt) {
     if (evt.target.parentNode.classList.contains('friends')) {
         removeContent();
         friendListing();
+        evt.target.parentNode.classList.add('pure-menu-selected');
     }
     evt.preventDefault();
 });
