@@ -2,5 +2,8 @@
     "id": 3,
     "firstName": "Clark",
     "lastName": "Kent",
-    "avatar": "supes.jpg"
+    "avatar": "supes.jpg",
+    "email": "clarkk@example.com",
+    "home": "edmonton, ab",
+    "bio": "Da superman!"
 }

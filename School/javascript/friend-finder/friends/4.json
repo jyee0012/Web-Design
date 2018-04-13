@@ -2,5 +2,8 @@
     "id": 4,
     "firstName": "Sally",
     "lastName": "Anne",
-    "avatar": "sally.jpg"
+    "avatar": "sally.jpg",
+    "email": "sallya@example.com",
+    "home": "edmonton, ab",
+    "bio": "I <3 salt"
 }

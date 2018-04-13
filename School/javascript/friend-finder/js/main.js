@@ -1,52 +1,43 @@
 // Your code here...
 var friends, friendDetails;
-var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest(), friendXHR = new XMLHttpRequest();;
 xhr.addEventListener('load', function (evt) {
     friends = JSON.parse(xhr.responseText);
 });
 xhr.open('GET', 'friends/friends.json', true);
 xhr.send();
 
-document.querySelector('.pure-menu-link').addEventListener('click', function (evt) {
-    console.log(evt.target);
-    friendDetails = JSON.parse(xhr.responseText);
-    xhr.open('GET', 'friends/' + evt.target.data.id + '.json', true);
-    xhr.send();
-    evt.target.data
-});
-// xhr.addEventListener('load', function (evt) {
-//     friendDetails[0] = JSON.parse(xhr.responseText);
-// });
-// xhr.open('GET', 'friends/1.json', true);
-// xhr.send();
-
-// xhr.addEventListener('load', function (evt) {
-//     friendDetails[1] = JSON.parse(xhr.responseText);
-// });
-// xhr.open('GET', 'friends/2.json', true);
-// xhr.send();
-
-// xhr.addEventListener('load', function (evt) {
-//     friendDetails[2] = JSON.parse(xhr.responseText);
-// });
-// xhr.open('GET', 'friends/3.json', true);
-// xhr.send();
-
-// xhr.addEventListener('load', function (evt) {
-//     friendDetails[3] = JSON.parse(xhr.responseText);
-// });
-// xhr.open('GET', 'friends/4.json', true);
-// xhr.send();
-
-
-document.querySelector('#menu').addEventListener('click', function (evt) {
-    if (evt.target.parentNode.classList.contains('friends')) {
-        friendListing();
+document.querySelector('.content').addEventListener('click', function (evt) {
+    if (evt.target.dataset.id != null) {
+        loadFriendDetails(evt.target.dataset.id);
     }
     evt.preventDefault();
 });
 
 
+document.querySelector('#menu').addEventListener('click', function (evt) {
+    if (evt.target.parentNode.classList.contains('friends')) {
+        removeContent();
+        friendListing();
+    }
+    evt.preventDefault();
+});
+function loadFriendDetails(id) {
+    friendXHR.addEventListener('load', function (evt) {
+        friendDetails = JSON.parse(friendXHR.responseText);
+        removeContent();
+        showFriendDetails();
+    });
+    friendXHR.open('GET', 'friends/' + id + '.json', true);
+    friendXHR.send();
+}
+
+function removeContent() {
+    var content = document.querySelector('.content');
+    if (content.childNodes.length > 0) {
+        content.removeChild(content.childNodes[0]);
+    }
+}
 
 function friendListing() {
     var container, heading, list, listitems = [], links = [];
@@ -78,7 +69,7 @@ function friendListing() {
     document.querySelector('.content').appendChild(container);
 }
 
-function showFriendDetails(friendId) {
+function showFriendDetails() {
     var container, identity, img, name, email, emailSpan, home, homeSpan, list, bio;
     // create required elements
     container = document.createElement('div');
@@ -94,10 +85,10 @@ function showFriendDetails(friendId) {
     // set attributes
     container.setAttribute('class', 'friend');
     identity.setAttribute('class', 'identity');
-    img.setAttribute('src', 'img/' + friendDetails[friendId - 1].avatar);
+    img.setAttribute('src', 'img/' + friendDetails.avatar);
     img.setAttribute('class', 'photo');
     name.setAttribute('class', 'name');
-    name.textContent = friendDetails[friendId - 1].firstName + ' ' + friendDetails[friendId - 1].lastName;
+    name.textContent = friendDetails.firstName + ' ' + friendDetails.lastName;
 
     emailSpan.setAttribute('class', 'label');
     homeSpan.setAttribute('class', 'label');
@@ -105,11 +96,11 @@ function showFriendDetails(friendId) {
     homeSpan.textContent = 'hometown:';
     email.appendChild(emailSpan);
     home.appendChild(homeSpan);
-    email.textContent = ' ' + friendDetails[friendId - 1].email;
-    home.textContent = ' ' + friendDetails[friendId -1].home;
+    email.textContent = ' ' + friendDetails.email;
+    home.textContent = ' ' + friendDetails.home;
 
     bio.setAttribute('class', 'bio');
-    bio.textContent = friendDetails[friendId-1].bio;
+    bio.textContent = friendDetails.bio;
     // build elements
     list.appendChild(email);
     list.appendChild(home);
