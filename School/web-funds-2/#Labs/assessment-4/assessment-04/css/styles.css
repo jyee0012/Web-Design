@@ -1065,7 +1065,20 @@ footer {
                       REGISTER
 ******************************************************************
 */
-.registry {
+.agree-to-terms,
+.sign-up-for > .controls {
+  display: flex;
+  line-height: 0.7;
+  margin: 0.5rem 0;
+  vertical-align: middle;
+}
+
+.agree-to-terms input,
+.sign-up-for > .controls input {
+  margin-right: 0.5rem;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1073,8 +1086,34 @@ footer {
   /* default control styles */
 }
 
-.registry input, .registry label {
+.form input,
+.form label {
   display: block;
+}
+
+.form .agree-to-terms,
+.form .sign-up-for > .controls {
+  display: flex;
+  line-height: 0.7;
+  margin: 0.5rem 0;
+  vertical-align: middle;
+}
+
+.form .agree-to-terms input,
+.form .sign-up-for > .controls input {
+  margin-right: 0.5rem;
+}
+
+.form .additional-info h2 {
+  color: #1ac8c9;
+}
+
+.form span {
+  color: #6bd6cc;
+}
+
+.form strong > span {
+  color: #1ac8c9;
 }
 
 /*

@@ -3,13 +3,54 @@
                       REGISTER
 ******************************************************************
 */
-.registry{
+
+$bold-color: #1ac8c9;
+$link-color: #6bd6cc;
+.agree-to-terms,
+.sign-up-for>.controls {
+    display: flex;
+    line-height: 0.7;
+    margin: 0.5rem 0;
+    vertical-align: middle;
+    input {
+        margin-right: 0.5rem;
+    }
+}
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* default control styles */
-    input,label{
+    input,
+    label {
         display: block;
+    }
+    .registry{
+    }
+    .controls {}
+    .sign-up-for {}
+    .preferences {}
+    .agree-to-terms,
+    .sign-up-for>.controls {
+        display: flex;
+        line-height: 0.7;
+        margin: 0.5rem 0;
+        vertical-align: middle;
+        input {
+            margin-right: 0.5rem;
+        }
+    }
+    .additional-info{
+        h2{
+            color: $bold-color;
+        }
+    }
+    span{
+        color: $link-color;
+    }
+    strong>span{
+        color: $bold-color;
     }
 }
