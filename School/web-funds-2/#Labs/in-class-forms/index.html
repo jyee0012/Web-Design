@@ -1,343 +1,41 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html class="no-js" lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Framework</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet"> 
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form Demo</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/utils.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!-- This is the small viewport menu -->
-        <nav class="mobile-menu" role="mobile-controls">
-            <!-- your site navigation-settings items -->
-            <ul class="site-links">
-                <!-- 
-                    Anchor Element This triggers the link/action 
-                    role - is for js do not alter.
-                    data-url="where do you want to go"
-                -->
-                <li class="site-link" role="url-request" data-url="#thing">Link to Content On Same Page</li>
-                <li class="site-link" role="url-request" data-url="">Link to Something On Same Page</li>
-                <li class="site-link" role="url-request" data-url="">Link to The World On Same Page</li>
-                <li class="site-link" role="url-request" data-url="">Link to The Truth On Same Page</li>
-            </ul>
-        </nav>
-        <nav class="control-strip">
-            <ul class="icon-view">
-                <!-- ROLE FOR YOUR ICON FOR THE MENU SHOW -->
-                <li role="open-menu-button"><i class="material-icons">menu</i></li>
-                <li>RayFresh</li>
-                <li><i class="material-icons">favorite</i></li>
-            </ul>
-            <ul class="list-view">
-                <li>bla</li>
-                <li>bla bla</li>
-                <li>curling bla</li>
-            </ul>
-        </nav>
-        <main>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
+        <div class="login">
+            <div class="username" role="user name controls">
+                <label for="username">Enter Your Username</label>
+                <input id="username" type="text" name="username" value="" placeholder="enter your user name">
             </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
+            <div class="password" role="password controls">
+                <label for="password"> Enter your password</label>
+                <input id="password" type="password" name="password" value="" placeholder="enter your password">
             </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
+            <div class="login-button" role="login button">
+                <button type="submit">Login</button>
             </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div id="thing" class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            
-            <div class="dark">
-                <h2>Dark Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-            <div class="light">
-                <h2>Light Coloured Class</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor temporibus ratione ipsa quos reiciendis voluptatibus laboriosam, distinctio vel blanditiis quaerat dolorem molestias eos? Quidem, praesentium corrupti rerum recusandae quas!
-                </p>
-            </div>
-        </main>
-        <script src="js/vendor/mobile-menu.js"></script>
+        </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
