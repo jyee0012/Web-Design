@@ -67,8 +67,8 @@
         </div>
     </main>
     <div class="form">
-        <div class="registry">
             <h2>REGISTER</h2>
+        <div class="registry">
             <div class="first-name controls" role="first name controls">
                 <label for="firstname">First Name</label>
                 <input id="firstname" type="text" name="firstname" value="">
@@ -79,7 +79,7 @@
                 <input id="lastname" type="text" name="lastname" value="">
             </div>
 
-            <div class="email controls" role="email controls">
+            <div class="email x2 controls" role="email controls">
                 <label for="email">Email Address</label>
                 <input id="email" type="text" name="email" value="">
             </div>
@@ -108,12 +108,12 @@
                 <input id="phonenumber" type="text" value="">
             </div>
 
-            <div class="agree-to-terms controls">
+            <div class="agree-to-terms x2 controls">
                 <input id="agree" type="checkbox">
                 <label for="agree">I agree to the terms and conditions of the website. I may opt out at any time.</label>
             </div>
 
-            <div class="message controls">
+            <div class="message x2 controls">
                 <label for="message">Send us a message (optional)</label>
                 <textarea name="message" id="message" cols="50" rows="10"></textarea>
             </div>
@@ -151,9 +151,33 @@
             </div>
         </div>
         <div class="preferences">
-            <div class="language controls"></div>
-            <div class="size controls"></div>
-            <div class="location controls"></div>
+            <div class="language controls">
+                <label for="language">Language</label>
+                <select name="language" id="language">
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="spanish">Spanish</option>
+                <option value="chinese">Chinese</option>
+            </select>
+            </div>
+            <div class="size controls">
+                <label for="size">Do you prefer a size of clothing?</label>
+                <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">Extra Large</option>
+                <option value="xxlarge">Extra Extra Large</option>
+            </select>
+            </div>
+            <div class="location controls">
+                <label for="location">Your Store Location</label>
+                <select name="location" id="location">
+                <option value="edmonton-ab">Edmonton, AB</option>
+                <option value="calgary-ab">Calgary, AB</option>
+                <option value="somewhere-cn">Somewhere, CN</option>
+            </select>
+            </div>
         </div>
         <div class="submit-btn">
             <button type="submit">CREATE ACCOUNT</button>

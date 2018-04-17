@@ -1,41 +1,70 @@
 <!doctype html>
 <html class="no-js" lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Form Demo</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <div class="login">
-            <div class="username" role="user name controls">
-                <label for="username">Enter Your Username</label>
-                <input id="username" type="text" name="username" value="" placeholder="enter your user name">
-            </div>
-            <div class="password" role="password controls">
-                <label for="password"> Enter your password</label>
-                <input id="password" type="password" name="password" value="" placeholder="enter your password">
-            </div>
-            <div class="login-button" role="login button">
-                <button type="submit">Login</button>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Animal Clinic Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Ubuntu" rel="stylesheet"> 
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to the Animal Clinic</h1>
+    <h2>Please register to continue.</h2>
+    <div class="form">
+        <div class="pet-name">
+            <label for="petname">Pet Name</label>
+            <input id="petname" type="text">
         </div>
-    </body>
+        <div class="pet-type">
+            <label for="pettype">Pet Type</label>
+            <select name="pettype" id="pettype">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+                <option value="lizard">Lizard</option>
+                <option value="gerbil">Gerbil</option>
+                <option value="hamster">Hamster</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="owner-name">
+            <label for="ownername">Owner Name</label>
+            <input id="ownername" type="text">
+        </div>
+        <div class="first-visit">
+            <input id="firstvisit" type="checkbox">
+            <label for="firstvisit">Is this your first visit?</label>
+        </div>
+        <div class="message">
+            <label for="message">Send us a message (optional)</label>
+            <textarea name="message" id="message" cols="25" rows="3"></textarea>
+        </div>
+        <div class="email">
+            <label for="email">Email Address</label>
+            <input id="email" type="text">
+        </div>
+        <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text">
+        </div>
+        <div class="pet-age">
+            <label for="petage">Pet Age</label>
+            <input id="petage" type="text">
+        </div>
+        <div class="agree-to-terms">
+            <input id="agree" type="checkbox">
+            <label for="agree">I agree to the terms and conditions. (CASL compliance)</label>
+        </div>
+        <div class="submit">
+            <button type="submit">Check in</button>
+        </div>
+    </div>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

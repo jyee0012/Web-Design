@@ -3,9 +3,9 @@ body{
     line-height: 1.5;
     height: 100%;
     position: relative;
-    background-color: tomato;
+    background-color: deepskyblue;
 }
-.login{
+body{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,4 +27,24 @@ input[name="username"]{
     color: grey;
     opacity: 0.85;
     font-size: 0.8em;
+}
+.first-visit, .agree-to-terms{
+    line-height: 0.9;
+    margin: 0.5rem 0;
+    vertical-align: middle;
+    display: flex;
+}
+.first-visit input, .agree-to-terms input{
+    margin-right: 0.5rem;
+}
+.form > *{
+    margin-bottom: 0.7rem;
+}
+.bevan{
+    font-family: 'Bevan', cursive;
+    width: 20rem;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    width: 20rem;
 }
